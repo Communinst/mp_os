@@ -9,16 +9,10 @@ FetchContent_Declare(
 # For Windows users: prevent overriding the parent project's compiler/linker settings
 # set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
-FetchContent_MakeAvailable(
-        googletest)
 
 add_executable(
         mp_os_lggr_clnt_lggr_tests
         client_logger_tests.cpp)
-target_link_libraries(
-        mp_os_lggr_clnt_lggr_tests
-        PRIVATE
-        gtest_main)
 target_link_libraries(
         mp_os_lggr_clnt_lggr_tests
         PUBLIC

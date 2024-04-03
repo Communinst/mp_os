@@ -1,0 +1,1 @@
+-IX:/Coding/CPP/mp_os/common/./include -IX:/Coding/CPP/mp_os/logger/logger/./include -IX:/Coding/CPP/mp_os/logger/server_logger/./include -I"X:/Coding/CPP/mp_os/build/_deps/json-src/include" -isystem "X:/Coding/CPP/mp_os/build/_deps/googletest-src/googletest/include" -isystem "X:/Coding/CPP/mp_os/build/_deps/googletest-src/googletest"

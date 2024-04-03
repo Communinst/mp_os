@@ -1,0 +1,34 @@
+
+{
+    "loggers" : [
+        {
+            "format" : "%t %d %s %m",
+            "streams" : 
+            [
+                {
+                    "path" : "Console",
+                    "severity" : [4]
+                },
+                {
+                    "path" : "X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\tests\\idiot_savant.txt",
+                    "severity" : [4]
+                }
+            ]
+        },
+        {
+            "format" : "%t %d %s",
+            "streams" : 
+            [
+                {
+                    "path" : "Console",
+                    "severity" : [0, 1 ,3]
+                },
+                {
+                    "path" : "X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\tests\\idiot_savant.txt",
+                    "severity" : [0, 3, 4]
+                }
+            ]
+        }
+    ]
+
+}

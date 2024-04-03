@@ -1,0 +1,1 @@
+ ../../../common/libmp_os_cmmn.a ../../logger/libmp_os_lggr_lggr.a ../libmp_os_lggr_clnt_lggr.a ../../../common/libmp_os_cmmn.a ../../logger/libmp_os_lggr_lggr.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

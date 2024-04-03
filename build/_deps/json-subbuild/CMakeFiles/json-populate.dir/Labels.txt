@@ -1,0 +1,14 @@
+# Target labels
+ json-populate
+# Source files and their labels
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/CMakeFiles/json-populate
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/CMakeFiles/json-populate.rule
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/CMakeFiles/json-populate-complete.rule
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build.rule
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure.rule
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download.rule
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install.rule
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir.rule
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch.rule
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test.rule
+X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update.rule
