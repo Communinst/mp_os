@@ -1,3 +1,2 @@
-[23:16:56][03.04.2024][TRACE]
-[23:16:56][03.04.2024][WARNING]
-[23:16:56][03.04.2024][ERROR]
+[11:59:46][04.04.2024][WARNING]	Message: Hi! I'm that famous savant!
+

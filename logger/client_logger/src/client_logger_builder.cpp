@@ -42,7 +42,7 @@ logger_builder *client_logger_builder::add_console_stream(
 ////
 logger_builder* client_logger_builder::transform_with_configuration(
     std::string const &configuration_file_path,
-    std::string const &configuration_path)
+    std::string const &configuration_path) throw()
 {
     // Open file as json
     std::ifstream config_fdata(configuration_file_path);

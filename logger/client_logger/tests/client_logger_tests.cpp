@@ -34,20 +34,23 @@ int main(
     delete lggr1;
     builder->clear();
 
+    
+
     try
     {
-        /* code */
+        builder->client_logger_builder::transform_with_configuration(
+                        "X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\tests\\confi.json", 
+                        "/loggers/1");
+        lggr1 = builder
+            ->build();
+
     }
     catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
+        delete builder;
+        delete lggr1;
     }
-    
-    builder->client_logger_builder::transform_with_configuration(
-                        "X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\tests\\config.json", 
-                        "/loggers/1");
-    lggr1 = builder
-            ->build();
 
     lggr1->log("Slavery was great0!\n", logger::severity::trace);
     lggr1->log("Slavery was great1!\n", logger::severity::debug);
