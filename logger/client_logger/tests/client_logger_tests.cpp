@@ -59,7 +59,10 @@ int main(
     lggr1->log("Slavery was great4!\n", logger::severity::error);
     lggr1->log("Slavery was great5!\n", logger::severity::critical);
 
+    logger *lggr2(std::move(lggr1));
+
     delete lggr1;
+    delete lggr2;
     builder->clear();
 
     lggr1 = builder->build();

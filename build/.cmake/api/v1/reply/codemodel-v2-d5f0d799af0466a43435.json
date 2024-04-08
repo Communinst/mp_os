@@ -1,0 +1,916 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						12
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "common",
+					"jsonFile" : "directory-common-Debug-df8a23303754f0cfc2e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "common",
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"build" : "logger",
+					"childIndexes" : 
+					[
+						3,
+						6,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-logger-Debug-540440305f9964810dc4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "logger"
+				},
+				{
+					"build" : "logger/client_logger",
+					"childIndexes" : 
+					[
+						4,
+						5
+					],
+					"jsonFile" : "directory-logger.client_logger-Debug-83f108e66444f1dacaad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "logger/client_logger",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "logger/client_logger/tests",
+					"jsonFile" : "directory-logger.client_logger.tests-Debug-4edb37d133de949b588b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 4,
+					"source" : "logger/client_logger/tests",
+					"targetIndexes" : 
+					[
+						17
+					]
+				},
+				{
+					"build" : "_deps/json-build",
+					"jsonFile" : "directory-_deps.json-build-Debug-b992325f012a7585f532.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 5,
+					"source" : "build/_deps/json-src"
+				},
+				{
+					"build" : "logger/logger",
+					"jsonFile" : "directory-logger.logger-Debug-b1cc1391efaca02c4f23.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 6,
+					"source" : "logger/logger",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "logger/server_logger",
+					"childIndexes" : 
+					[
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-logger.server_logger-Debug-26966d217110c7a41ec4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 7,
+					"source" : "logger/server_logger",
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"build" : "logger/server_logger/tests",
+					"childIndexes" : 
+					[
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-logger.server_logger.tests-Debug-d292cee4e19ed4bb6256.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 8,
+					"source" : "logger/server_logger/tests",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "_deps/googletest-build",
+					"childIndexes" : 
+					[
+						10
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build-Debug-8b187651187085369010.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 9,
+					"source" : "build/_deps/googletest-src"
+				},
+				{
+					"build" : "_deps/googletest-build/googlemock",
+					"childIndexes" : 
+					[
+						11
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-05d437ea70ae2f974924.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 10,
+					"source" : "build/_deps/googletest-src/googlemock",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "_deps/googletest-build/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-1bf176a53570d708e943.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 11,
+					"source" : "build/_deps/googletest-src/googletest",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"build" : "allocator",
+					"childIndexes" : 
+					[
+						13,
+						14,
+						16,
+						18,
+						20,
+						22
+					],
+					"jsonFile" : "directory-allocator-Debug-431dc27378753f8ca5df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 12,
+					"source" : "allocator"
+				},
+				{
+					"build" : "allocator/allocator",
+					"jsonFile" : "directory-allocator.allocator-Debug-b915eef0bf1de56f3767.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 13,
+					"source" : "allocator/allocator",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "allocator/allocator_boundary_tags",
+					"childIndexes" : 
+					[
+						15
+					],
+					"jsonFile" : "directory-allocator.allocator_boundary_tags-Debug-ab1b8ad9bf2c0a2fb256.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 14,
+					"source" : "allocator/allocator_boundary_tags",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "allocator/allocator_boundary_tags/tests",
+					"jsonFile" : "directory-allocator.allocator_boundary_tags.tests-Debug-dafee5a22075375d8380.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 15,
+					"source" : "allocator/allocator_boundary_tags/tests",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "allocator/allocator_buddies_system",
+					"childIndexes" : 
+					[
+						17
+					],
+					"jsonFile" : "directory-allocator.allocator_buddies_system-Debug-d6a605bcab9059424fe5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 16,
+					"source" : "allocator/allocator_buddies_system",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "allocator/allocator_buddies_system/tests",
+					"jsonFile" : "directory-allocator.allocator_buddies_system.tests-Debug-19d2ab57c8bc5477cc03.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 17,
+					"source" : "allocator/allocator_buddies_system/tests",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "allocator/allocator_global_heap",
+					"childIndexes" : 
+					[
+						19
+					],
+					"jsonFile" : "directory-allocator.allocator_global_heap-Debug-3cc6a7e4d6f2d09a8254.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 18,
+					"source" : "allocator/allocator_global_heap",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "allocator/allocator_global_heap/tests",
+					"jsonFile" : "directory-allocator.allocator_global_heap.tests-Debug-1f7854444a57236c963e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 18,
+					"projectIndex" : 19,
+					"source" : "allocator/allocator_global_heap/tests",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "allocator/allocator_red_black_tree",
+					"childIndexes" : 
+					[
+						21
+					],
+					"jsonFile" : "directory-allocator.allocator_red_black_tree-Debug-031897455b83fdedb337.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 20,
+					"source" : "allocator/allocator_red_black_tree",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "allocator/allocator_red_black_tree/tests",
+					"jsonFile" : "directory-allocator.allocator_red_black_tree.tests-Debug-e13d1d69a05fa3cb6eaf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 21,
+					"source" : "allocator/allocator_red_black_tree/tests",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "allocator/allocator_sorted_list",
+					"childIndexes" : 
+					[
+						23
+					],
+					"jsonFile" : "directory-allocator.allocator_sorted_list-Debug-fee4b216c62c2194e5bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 22,
+					"source" : "allocator/allocator_sorted_list",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "allocator/allocator_sorted_list/tests",
+					"jsonFile" : "directory-allocator.allocator_sorted_list.tests-Debug-75408b8118f2b4a2713d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 22,
+					"projectIndex" : 23,
+					"source" : "allocator/allocator_sorted_list/tests",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						12
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mp_os"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "mp_os_cmmn",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3,
+						6,
+						7
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "mp_os_lggr",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "mp_os_lggr_clnt_lggr",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "mp_os_lggr_clnt_lggr_tests",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						17
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 3
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "mp_os_lggr_lggr",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						8
+					],
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "mp_os_lggr_srvr_lggr",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						9
+					],
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "mp_os_lggr_srvr_lggr_tests",
+					"parentIndex" : 7,
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						10
+					],
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 8
+				},
+				{
+					"childIndexes" : 
+					[
+						11
+					],
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "gmock",
+					"parentIndex" : 9,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						11
+					],
+					"name" : "gtest",
+					"parentIndex" : 10,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						13,
+						14,
+						16,
+						18,
+						20,
+						22
+					],
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "mp_os_allctr",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "mp_os_allctr_allctr",
+					"parentIndex" : 12,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						15
+					],
+					"directoryIndexes" : 
+					[
+						14
+					],
+					"name" : "mp_os_allctr_allctr_bndr_tgs",
+					"parentIndex" : 12,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						15
+					],
+					"name" : "mp_os_allctr_allctr_bndr_tgs_tests",
+					"parentIndex" : 14,
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						17
+					],
+					"directoryIndexes" : 
+					[
+						16
+					],
+					"name" : "mp_os_allctr_allctr_bdds_sstm",
+					"parentIndex" : 12,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						17
+					],
+					"name" : "mp_os_allctr_allctr_bdds_sstm_tests",
+					"parentIndex" : 16,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						19
+					],
+					"directoryIndexes" : 
+					[
+						18
+					],
+					"name" : "mp_os_allctr_allctr_glbl_hp",
+					"parentIndex" : 12,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						19
+					],
+					"name" : "mp_os_allctr_allctr_glbl_hp_tests",
+					"parentIndex" : 18,
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						21
+					],
+					"directoryIndexes" : 
+					[
+						20
+					],
+					"name" : "mp_os_allctr_allctr_rb_tr",
+					"parentIndex" : 12,
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						21
+					],
+					"name" : "mp_os_allctr_allctr_rb_tr_tests",
+					"parentIndex" : 20,
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						23
+					],
+					"directoryIndexes" : 
+					[
+						22
+					],
+					"name" : "mp_os_allctr_allctr_srtd_lst",
+					"parentIndex" : 12,
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						23
+					],
+					"name" : "mp_os_allctr_allctr_srtd_lst_tests",
+					"parentIndex" : 22,
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 10,
+					"id" : "gmock::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock-Debug-66ba69161885b5d749ed.json",
+					"name" : "gmock",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "gmock_main::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock_main-Debug-2f9c4070e5b7942bdf8f.json",
+					"name" : "gmock_main",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest-Debug-6d594b2e8c746de45fb4.json",
+					"name" : "gtest",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest_main-Debug-62615e191fea91a07d5f.json",
+					"name" : "gtest_main",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "mp_os_allctr_allctr::@67a2d12acd41ed6b0bc3",
+					"jsonFile" : "target-mp_os_allctr_allctr-Debug-319dee4533040b0a4aac.json",
+					"name" : "mp_os_allctr_allctr",
+					"projectIndex" : 13
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "mp_os_allctr_allctr_bdds_sstm::@c9a9cf57e8abda1f3e48",
+					"jsonFile" : "target-mp_os_allctr_allctr_bdds_sstm-Debug-ea8dcdefad77a1655da6.json",
+					"name" : "mp_os_allctr_allctr_bdds_sstm",
+					"projectIndex" : 16
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "mp_os_allctr_allctr_bdds_sstm_tests::@fbceba4a0dca6ccc0d5c",
+					"jsonFile" : "target-mp_os_allctr_allctr_bdds_sstm_tests-Debug-e3de88983bec4dfe3ea6.json",
+					"name" : "mp_os_allctr_allctr_bdds_sstm_tests",
+					"projectIndex" : 17
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "mp_os_allctr_allctr_bndr_tgs::@9ecd3817f9aae3681c09",
+					"jsonFile" : "target-mp_os_allctr_allctr_bndr_tgs-Debug-89195387363c4522379b.json",
+					"name" : "mp_os_allctr_allctr_bndr_tgs",
+					"projectIndex" : 14
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "mp_os_allctr_allctr_bndr_tgs_tests::@3b7b04324609e765ae99",
+					"jsonFile" : "target-mp_os_allctr_allctr_bndr_tgs_tests-Debug-340d450aec11d5d72162.json",
+					"name" : "mp_os_allctr_allctr_bndr_tgs_tests",
+					"projectIndex" : 15
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "mp_os_allctr_allctr_glbl_hp::@5406ead77bdc8e4b04d8",
+					"jsonFile" : "target-mp_os_allctr_allctr_glbl_hp-Debug-ea4dd151739029931617.json",
+					"name" : "mp_os_allctr_allctr_glbl_hp",
+					"projectIndex" : 18
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "mp_os_allctr_allctr_glbl_hp_tests::@16f117c78007c3aaefb3",
+					"jsonFile" : "target-mp_os_allctr_allctr_glbl_hp_tests-Debug-ccb4cda007aaef9d5188.json",
+					"name" : "mp_os_allctr_allctr_glbl_hp_tests",
+					"projectIndex" : 19
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "mp_os_allctr_allctr_rb_tr::@873d6e7af2ba91dd5be5",
+					"jsonFile" : "target-mp_os_allctr_allctr_rb_tr-Debug-0412c024ada1850c1d00.json",
+					"name" : "mp_os_allctr_allctr_rb_tr",
+					"projectIndex" : 20
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "mp_os_allctr_allctr_rb_tr_tests::@dff829a9c15d3fb606da",
+					"jsonFile" : "target-mp_os_allctr_allctr_rb_tr_tests-Debug-58ef88d4cb61c6501c71.json",
+					"name" : "mp_os_allctr_allctr_rb_tr_tests",
+					"projectIndex" : 21
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "mp_os_allctr_allctr_srtd_lst::@4702340b8f18f13d4df3",
+					"jsonFile" : "target-mp_os_allctr_allctr_srtd_lst-Debug-7bd06dd3b9c4c7a0b7da.json",
+					"name" : "mp_os_allctr_allctr_srtd_lst",
+					"projectIndex" : 22
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "mp_os_allctr_allctr_srtd_lst_tests::@9768f5af66b947045b7a",
+					"jsonFile" : "target-mp_os_allctr_allctr_srtd_lst_tests-Debug-b5d4ff822437c391ca1b.json",
+					"name" : "mp_os_allctr_allctr_srtd_lst_tests",
+					"projectIndex" : 23
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mp_os_cmmn::@bfc844598bd03e848b3c",
+					"jsonFile" : "target-mp_os_cmmn-Debug-d03744caaac68de706bb.json",
+					"name" : "mp_os_cmmn",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mp_os_lggr_clnt_lggr::@1192419ba09c9016d213",
+					"jsonFile" : "target-mp_os_lggr_clnt_lggr-Debug-2f073f59fe7016379451.json",
+					"name" : "mp_os_lggr_clnt_lggr",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "mp_os_lggr_clnt_lggr_tests::@6a2e72c4a132e9fdd966",
+					"jsonFile" : "target-mp_os_lggr_clnt_lggr_tests-Debug-2ad6ab2c508c6c2320c5.json",
+					"name" : "mp_os_lggr_clnt_lggr_tests",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "mp_os_lggr_lggr::@af94273c3084cfb43adb",
+					"jsonFile" : "target-mp_os_lggr_lggr-Debug-b660f49dd0e7305affb4.json",
+					"name" : "mp_os_lggr_lggr",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "mp_os_lggr_srvr_lggr::@e2d18bf6ba660b583df8",
+					"jsonFile" : "target-mp_os_lggr_srvr_lggr-Debug-bf0d09840dbf0c200665.json",
+					"name" : "mp_os_lggr_srvr_lggr",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "mp_os_lggr_srvr_lggr_tests::@760034cb329c9a22b06f",
+					"jsonFile" : "target-mp_os_lggr_srvr_lggr_tests-Debug-77c3472d00eac28a7451.json",
+					"name" : "mp_os_lggr_srvr_lggr_tests",
+					"projectIndex" : 8
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "X:/Coding/CPP/mp_os/build",
+		"source" : "X:/Coding/CPP/mp_os"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

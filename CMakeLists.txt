@@ -8,3 +8,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_subdirectory(common)
 add_subdirectory(logger)
+add_subdirectory(allocator)

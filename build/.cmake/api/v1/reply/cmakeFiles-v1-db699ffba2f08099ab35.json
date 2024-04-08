@@ -322,6 +322,92 @@
 		{
 			"isGenerated" : true,
 			"path" : "build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in"
+		},
+		{
+			"path" : "allocator/CMakeLists.txt"
+		},
+		{
+			"path" : "allocator/allocator/CMakeLists.txt"
+		},
+		{
+			"path" : "allocator/allocator_boundary_tags/CMakeLists.txt"
+		},
+		{
+			"path" : "allocator/allocator_boundary_tags/tests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/FetchContent.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"path" : "allocator/allocator_buddies_system/CMakeLists.txt"
+		},
+		{
+			"path" : "allocator/allocator_buddies_system/tests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/FetchContent.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"path" : "allocator/allocator_global_heap/CMakeLists.txt"
+		},
+		{
+			"path" : "allocator/allocator_global_heap/tests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/FetchContent.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"path" : "allocator/allocator_red_black_tree/CMakeLists.txt"
+		},
+		{
+			"path" : "allocator/allocator_red_black_tree/tests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/FetchContent.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"path" : "allocator/allocator_sorted_list/CMakeLists.txt"
+		},
+		{
+			"path" : "allocator/allocator_sorted_list/tests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/FetchContent.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
