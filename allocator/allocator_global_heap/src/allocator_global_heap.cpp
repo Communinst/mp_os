@@ -5,14 +5,14 @@
 allocator_global_heap::allocator_global_heap(
     logger *logger) : _logger(logger)
 {
-    trace_with_guard("Allocator_global_heap::constructor: Successfully called and completed.\n");
+    trace_with_guard(get_typename() + "constructor: Successfully called and completed.\n");
 }
 //
 
 //
 allocator_global_heap::~allocator_global_heap()
 {
-    trace_with_guard("Allocator_global_heap::destructor: Successfully called and completed.\n");
+    trace_with_guard(get_typename() + "destructor: Successfully called and completed.\n");
 }
 // 
 
@@ -20,10 +20,10 @@ allocator_global_heap::~allocator_global_heap()
 allocator_global_heap::allocator_global_heap(
     allocator_global_heap &&other) noexcept
 {
-    trace_with_guard("Allocator_global_heap::move_constructor: Move constructor has been launched.\n");
+    trace_with_guard(get_typename() + "move_constructor: Move constructor has been launched.\n");
     _logger = other._logger;
     other._logger = nullptr;
-    trace_with_guard("Allocator_global_heap::move_constructor: Move constructor succeed.\n");
+    trace_with_guard(get_typename() + "move_constructor: Move constructor succeed.\n");
 }
 //
 
@@ -33,11 +33,11 @@ allocator_global_heap &allocator_global_heap::operator=(
 {
     if (this != &other)
     {
-        trace_with_guard("Allocator_global_heap::move_operator=: Move operator= has been launched.\n");
+        trace_with_guard(get_typename() + "move_operator=: Move operator= has been launched.\n");
         _logger = other._logger;
         other._logger = nullptr;
     }
-    trace_with_guard("Allocator_global_heap::move_operator=: Move operator= has been launched.\n");
+    trace_with_guard(get_typename() + "move_operator=: Move operator= has been launched.\n");
     return *this;
 }
 //
@@ -47,25 +47,26 @@ allocator_global_heap &allocator_global_heap::operator=(
     size_t value_size,
     size_t values_count)
 {
-    debug_with_guard("Allocator_global_heap::allocate: Allocating segment of approapriate size.\n");
+    debug_with_guard(get_typename() + "allocate: Allocating segment of approapriate size.\n");
 
     void *mem_seg = nullptr;
     try
     {
         mem_seg = ::operator new(value_size * values_count + sizeof(size_t) + sizeof(allocator_global_heap*));
-        auto **allocator = reinterpret_cast<allocator_global_heap**>(mem_seg);
-        *allocator = this;
-        auto *size = reinterpret_cast<size_t*>(allocator + 1);
-        *size = (values_count * value_size);
-        mem_seg = reinterpret_cast<void*>(size + 1);
     }
     catch(const std::exception& ex)
     {
-        error_with_guard("Allocator_global_heap::allocate: Allocation failed.\n");
+        error_with_guard(get_typename() + "allocate: Allocation failed.");
         throw ex;
     }
 
-    debug_with_guard("Allocator_global_heap::allocate: Allocating succeed.\n");
+    auto **allocator = reinterpret_cast<allocator_global_heap**>(mem_seg);
+    *allocator = this;
+    auto *size = reinterpret_cast<size_t*>(allocator + 1);
+    *size = (values_count * value_size);
+    mem_seg = reinterpret_cast<void*>(size + 1);
+
+    debug_with_guard(get_typename() + "allocate: Allocating succeed.");
     return mem_seg;
 
 }
@@ -74,12 +75,12 @@ allocator_global_heap &allocator_global_heap::operator=(
 //
 allocator_global_heap* allocator_global_heap::get_allocator(void *const mem_seg) const noexcept
 {
-    trace_with_guard("Allocator_global_heap::get_allocator: Handling allocator byte...\n");
+    trace_with_guard(get_typename() + "get_allocator: Handling allocator byte...\n");
 
     auto *size = reinterpret_cast<size_t*>(mem_seg);
     auto **allocator = reinterpret_cast<allocator_global_heap**>(size - 1);
 
-    trace_with_guard("Allocator_global_heap::get_allocator: Allocator obtained.\n");
+    trace_with_guard(get_typename() + "get_allocator: Allocator obtained.\n");
 
     return (*(allocator - 1));
 
@@ -89,11 +90,11 @@ allocator_global_heap* allocator_global_heap::get_allocator(void *const mem_seg)
 //
 size_t allocator_global_heap::get_size(void *const mem_seg) const noexcept
 {
-    trace_with_guard("Allocator_global_heap::get_size: Handling size byte...\n");
+    trace_with_guard(get_typename() + "get_size: Handling size byte...\n");
 
     auto *size = reinterpret_cast<size_t*>(mem_seg);
 
-    trace_with_guard("Allocator_global_heap::get_byte_state: Size obtained.\n");
+    trace_with_guard(get_typename() + "get_byte_state: Size obtained.\n");
 
     auto buff = *(size - 1);
 
@@ -106,7 +107,7 @@ size_t allocator_global_heap::get_size(void *const mem_seg) const noexcept
 std::string allocator_global_heap::get_byte_data(void *const mem_seg) const noexcept
 {
 
-    trace_with_guard("Allocator_global_heap::get_byte_state: Handling bytes flow...\n");
+    trace_with_guard(get_typename() + "get_byte_state: Handling bytes flow...\n");
     std::string memory_state;
     size_t size = get_size(mem_seg);
 
@@ -116,7 +117,7 @@ std::string allocator_global_heap::get_byte_data(void *const mem_seg) const noex
         memory_state += (*raw_mem);
         memory_state += ' ';
     } 
-    trace_with_guard("Allocator_global_heap::get_byte_state: Memory state obtained and wraped.\n");
+    trace_with_guard(get_typename() + "get_byte_state: Memory state obtained and wraped.\n");
 
     return memory_state;
 
@@ -127,20 +128,20 @@ std::string allocator_global_heap::get_byte_data(void *const mem_seg) const noex
 void allocator_global_heap::deallocate(
     void *at)
 {
-    debug_with_guard("Allocator_global_heap::deallocate: Deallocating transfered segment...\n");
+    debug_with_guard(get_typename() + "deallocate: Deallocating transfered segment...");
 
     std::string byte_state = get_byte_data(at);
 
-    debug_with_guard("Allocator_global_heap::deallocate: Current memory state:" + byte_state);
+    debug_with_guard(get_typename() + "deallocate: Current memory state:" + byte_state);
 
     if (get_allocator(at) == this)
     {
         ::operator delete(reinterpret_cast<unsigned char *>(at) - sizeof(size_t*) - sizeof(allocator_global_heap**));
-        debug_with_guard("Allocator_global_heap::deallocate: Deallocation succeed.\n");
+        debug_with_guard(get_typename() + "deallocate: Deallocation succeed.\n");
     }
     else
     {
-        debug_with_guard("Allocator_global_heap::deallocate: Segment was transfered to the wrong allocator.\n");
+        debug_with_guard(get_typename() + "deallocate: Segment was transfered to the wrong allocator.\n");
         throw std::logic_error("Wrong allocator");
     }
     
@@ -157,7 +158,6 @@ inline logger *allocator_global_heap::get_logger() const
 // GBG
 inline std::string allocator_global_heap::get_typename() const noexcept
 {
-    error_with_guard("What are you expecting for?\n");
-    return "empty";
+    return "Allocator_global_heap::";
 }
 //
