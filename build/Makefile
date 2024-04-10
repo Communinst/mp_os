@@ -304,58 +304,6 @@ mp_os_allctr_allctr/fast:
 .PHONY : mp_os_allctr_allctr/fast
 
 #=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_bndr_tgs
-
-# Build rule for target.
-mp_os_allctr_allctr_bndr_tgs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_bndr_tgs
-.PHONY : mp_os_allctr_allctr_bndr_tgs
-
-# fast build rule for target.
-mp_os_allctr_allctr_bndr_tgs/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\mp_os_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/build
-.PHONY : mp_os_allctr_allctr_bndr_tgs/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_bndr_tgs_tests
-
-# Build rule for target.
-mp_os_allctr_allctr_bndr_tgs_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_bndr_tgs_tests
-.PHONY : mp_os_allctr_allctr_bndr_tgs_tests
-
-# fast build rule for target.
-mp_os_allctr_allctr_bndr_tgs_tests/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\tests\CMakeFiles\mp_os_allctr_allctr_bndr_tgs_tests.dir\build.make allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/build
-.PHONY : mp_os_allctr_allctr_bndr_tgs_tests/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_bdds_sstm
-
-# Build rule for target.
-mp_os_allctr_allctr_bdds_sstm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_bdds_sstm
-.PHONY : mp_os_allctr_allctr_bdds_sstm
-
-# fast build rule for target.
-mp_os_allctr_allctr_bdds_sstm/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_buddies_system\CMakeFiles\mp_os_allctr_allctr_bdds_sstm.dir\build.make allocator/allocator_buddies_system/CMakeFiles/mp_os_allctr_allctr_bdds_sstm.dir/build
-.PHONY : mp_os_allctr_allctr_bdds_sstm/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_bdds_sstm_tests
-
-# Build rule for target.
-mp_os_allctr_allctr_bdds_sstm_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_bdds_sstm_tests
-.PHONY : mp_os_allctr_allctr_bdds_sstm_tests
-
-# fast build rule for target.
-mp_os_allctr_allctr_bdds_sstm_tests/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_buddies_system\tests\CMakeFiles\mp_os_allctr_allctr_bdds_sstm_tests.dir\build.make allocator/allocator_buddies_system/tests/CMakeFiles/mp_os_allctr_allctr_bdds_sstm_tests.dir/build
-.PHONY : mp_os_allctr_allctr_bdds_sstm_tests/fast
-
-#=============================================================================
 # Target rules for targets named mp_os_allctr_allctr_glbl_hp
 
 # Build rule for target.
@@ -381,58 +329,6 @@ mp_os_allctr_allctr_glbl_hp_tests/fast:
 	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\tests\CMakeFiles\mp_os_allctr_allctr_glbl_hp_tests.dir\build.make allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/build
 .PHONY : mp_os_allctr_allctr_glbl_hp_tests/fast
 
-#=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_rb_tr
-
-# Build rule for target.
-mp_os_allctr_allctr_rb_tr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_rb_tr
-.PHONY : mp_os_allctr_allctr_rb_tr
-
-# fast build rule for target.
-mp_os_allctr_allctr_rb_tr/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_red_black_tree\CMakeFiles\mp_os_allctr_allctr_rb_tr.dir\build.make allocator/allocator_red_black_tree/CMakeFiles/mp_os_allctr_allctr_rb_tr.dir/build
-.PHONY : mp_os_allctr_allctr_rb_tr/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_rb_tr_tests
-
-# Build rule for target.
-mp_os_allctr_allctr_rb_tr_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_rb_tr_tests
-.PHONY : mp_os_allctr_allctr_rb_tr_tests
-
-# fast build rule for target.
-mp_os_allctr_allctr_rb_tr_tests/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_red_black_tree\tests\CMakeFiles\mp_os_allctr_allctr_rb_tr_tests.dir\build.make allocator/allocator_red_black_tree/tests/CMakeFiles/mp_os_allctr_allctr_rb_tr_tests.dir/build
-.PHONY : mp_os_allctr_allctr_rb_tr_tests/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_srtd_lst
-
-# Build rule for target.
-mp_os_allctr_allctr_srtd_lst: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_srtd_lst
-.PHONY : mp_os_allctr_allctr_srtd_lst
-
-# fast build rule for target.
-mp_os_allctr_allctr_srtd_lst/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_sorted_list\CMakeFiles\mp_os_allctr_allctr_srtd_lst.dir\build.make allocator/allocator_sorted_list/CMakeFiles/mp_os_allctr_allctr_srtd_lst.dir/build
-.PHONY : mp_os_allctr_allctr_srtd_lst/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_srtd_lst_tests
-
-# Build rule for target.
-mp_os_allctr_allctr_srtd_lst_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_srtd_lst_tests
-.PHONY : mp_os_allctr_allctr_srtd_lst_tests
-
-# fast build rule for target.
-mp_os_allctr_allctr_srtd_lst_tests/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_sorted_list\tests\CMakeFiles\mp_os_allctr_allctr_srtd_lst_tests.dir\build.make allocator/allocator_sorted_list/tests/CMakeFiles/mp_os_allctr_allctr_srtd_lst_tests.dir/build
-.PHONY : mp_os_allctr_allctr_srtd_lst_tests/fast
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -450,16 +346,8 @@ help:
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... mp_os_allctr_allctr
-	@echo ... mp_os_allctr_allctr_bdds_sstm
-	@echo ... mp_os_allctr_allctr_bdds_sstm_tests
-	@echo ... mp_os_allctr_allctr_bndr_tgs
-	@echo ... mp_os_allctr_allctr_bndr_tgs_tests
 	@echo ... mp_os_allctr_allctr_glbl_hp
 	@echo ... mp_os_allctr_allctr_glbl_hp_tests
-	@echo ... mp_os_allctr_allctr_rb_tr
-	@echo ... mp_os_allctr_allctr_rb_tr_tests
-	@echo ... mp_os_allctr_allctr_srtd_lst
-	@echo ... mp_os_allctr_allctr_srtd_lst_tests
 	@echo ... mp_os_cmmn
 	@echo ... mp_os_lggr_clnt_lggr
 	@echo ... mp_os_lggr_clnt_lggr_tests

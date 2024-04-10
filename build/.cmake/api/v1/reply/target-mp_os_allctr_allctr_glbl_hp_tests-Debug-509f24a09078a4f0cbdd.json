@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests.exe"
+			"path" : "allocator/allocator_global_heap/tests/mp_os_allctr_allctr_glbl_hp_tests.exe"
 		},
 		{
-			"path" : "allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests.pdb"
+			"path" : "allocator/allocator_global_heap/tests/mp_os_allctr_allctr_glbl_hp_tests.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,7 @@
 		],
 		"files" : 
 		[
-			"allocator/allocator_sorted_list/tests/CMakeLists.txt",
+			"allocator/allocator_global_heap/tests/CMakeLists.txt",
 			"build/_deps/googletest-src/googletest/CMakeLists.txt",
 			"logger/client_logger/CMakeLists.txt"
 		],
@@ -116,7 +116,7 @@
 				},
 				{
 					"backtrace" : 6,
-					"path" : "X:/Coding/CPP/mp_os/allocator/allocator_sorted_list/./include"
+					"path" : "X:/Coding/CPP/mp_os/allocator/allocator_global_heap/./include"
 				},
 				{
 					"backtrace" : 2,
@@ -161,22 +161,22 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "mp_os_allctr_allctr_glbl_hp::@5406ead77bdc8e4b04d8"
 		},
 		{
 			"backtrace" : 5,
 			"id" : "mp_os_allctr_allctr::@67a2d12acd41ed6b0bc3"
-		},
-		{
-			"backtrace" : 6,
-			"id" : "mp_os_allctr_allctr_srtd_lst::@4702340b8f18f13d4df3"
 		}
 	],
-	"id" : "mp_os_allctr_allctr_srtd_lst_tests::@9768f5af66b947045b7a",
+	"id" : "mp_os_allctr_allctr_glbl_hp_tests::@16f117c78007c3aaefb3",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -211,7 +211,7 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "..\\libmp_os_allctr_allctr_srtd_lst.a",
+				"fragment" : "..\\libmp_os_allctr_allctr_glbl_hp.a",
 				"role" : "libraries"
 			},
 			{
@@ -241,12 +241,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "mp_os_allctr_allctr_srtd_lst_tests",
-	"nameOnDisk" : "mp_os_allctr_allctr_srtd_lst_tests.exe",
+	"name" : "mp_os_allctr_allctr_glbl_hp_tests",
+	"nameOnDisk" : "mp_os_allctr_allctr_glbl_hp_tests.exe",
 	"paths" : 
 	{
-		"build" : "allocator/allocator_sorted_list/tests",
-		"source" : "allocator/allocator_sorted_list/tests"
+		"build" : "allocator/allocator_global_heap/tests",
+		"source" : "allocator/allocator_global_heap/tests"
 	},
 	"sourceGroups" : 
 	[
@@ -263,7 +263,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "allocator/allocator_sorted_list/tests/allocator_sorted_list_tests.cpp",
+			"path" : "allocator/allocator_global_heap/tests/allocator_global_heap_tests.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

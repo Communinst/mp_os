@@ -16,6 +16,12 @@ private:
     
     logger *_logger;
 
+private:
+
+    allocator_global_heap* get_allocator(void *const mem_seg) const noexcept;
+    size_t get_size(void *const mem_seg) const noexcept;
+    std::string get_byte_data(void *const mem_seg) const noexcept;
+
 public:
     
     explicit allocator_global_heap(
@@ -43,11 +49,6 @@ public:
     
     void deallocate(
         void *at) override;
-
-public:
-    
-    void foo()
-    {};
 
 private:
     

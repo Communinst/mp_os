@@ -1,0 +1,9 @@
+[19:36:17][10.04.2024][DEBUG]	Message: Allocator_global_heap::allocate: Allocating segment of approapriate size.
+
+[19:36:17][10.04.2024][DEBUG]	Message: Allocator_global_heap::allocate: Allocating succeed.
+
+[19:36:17][10.04.2024][DEBUG]	Message: Allocator_global_heap::deallocate: Deallocating transfered segment...
+
+[19:36:17][10.04.2024][DEBUG]	Message: Allocator_global_heap::deallocate: Current memory state:
+[19:36:17][10.04.2024][DEBUG]	Message: Allocator_global_heap::deallocate: Deallocation succeed.
+

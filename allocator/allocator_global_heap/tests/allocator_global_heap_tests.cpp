@@ -5,6 +5,10 @@
 #include <logger.h>
 #include <logger_builder.h>
 
+//Static map of client_logger
+std::unordered_map<std::string, std::pair<std::ostream*, size_t>> client_logger::_loggers_count;
+//
+
 TEST(allocatorGlobalHeapTests, test1)
 {
     logger_builder *logger_builder_instance = new client_logger_builder;

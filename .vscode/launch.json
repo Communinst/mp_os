@@ -8,7 +8,9 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/logger/client_logger/tests/mp_os_lggr_clnt_lggr_tests.exe",
+            
+            //"program": "${workspaceFolder}/build/logger/client_logger/tests/mp_os_lggr_clnt_lggr_tests.exe",
+            "program": "${workspaceFolder}/build/allocator/allocator_global_heap/tests/mp_os_allctr_allctr_glbl_hp_tests.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
