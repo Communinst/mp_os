@@ -168,12 +168,12 @@
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
-			"backtrace" : 6,
-			"id" : "mp_os_allctr_allctr_glbl_hp::@5406ead77bdc8e4b04d8"
-		},
-		{
 			"backtrace" : 5,
 			"id" : "mp_os_allctr_allctr::@67a2d12acd41ed6b0bc3"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "mp_os_allctr_allctr_glbl_hp::@5406ead77bdc8e4b04d8"
 		}
 	],
 	"id" : "mp_os_allctr_allctr_glbl_hp_tests::@16f117c78007c3aaefb3",

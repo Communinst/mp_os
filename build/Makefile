@@ -304,6 +304,32 @@ mp_os_allctr_allctr/fast:
 .PHONY : mp_os_allctr_allctr/fast
 
 #=============================================================================
+# Target rules for targets named mp_os_allctr_allctr_bndr_tgs
+
+# Build rule for target.
+mp_os_allctr_allctr_bndr_tgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_bndr_tgs
+.PHONY : mp_os_allctr_allctr_bndr_tgs
+
+# fast build rule for target.
+mp_os_allctr_allctr_bndr_tgs/fast:
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\mp_os_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/build
+.PHONY : mp_os_allctr_allctr_bndr_tgs/fast
+
+#=============================================================================
+# Target rules for targets named mp_os_allctr_allctr_bndr_tgs_tests
+
+# Build rule for target.
+mp_os_allctr_allctr_bndr_tgs_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_bndr_tgs_tests
+.PHONY : mp_os_allctr_allctr_bndr_tgs_tests
+
+# fast build rule for target.
+mp_os_allctr_allctr_bndr_tgs_tests/fast:
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\tests\CMakeFiles\mp_os_allctr_allctr_bndr_tgs_tests.dir\build.make allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/build
+.PHONY : mp_os_allctr_allctr_bndr_tgs_tests/fast
+
+#=============================================================================
 # Target rules for targets named mp_os_allctr_allctr_glbl_hp
 
 # Build rule for target.
@@ -346,6 +372,8 @@ help:
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... mp_os_allctr_allctr
+	@echo ... mp_os_allctr_allctr_bndr_tgs
+	@echo ... mp_os_allctr_allctr_bndr_tgs_tests
 	@echo ... mp_os_allctr_allctr_glbl_hp
 	@echo ... mp_os_allctr_allctr_glbl_hp_tests
 	@echo ... mp_os_cmmn

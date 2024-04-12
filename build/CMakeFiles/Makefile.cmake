@@ -45,6 +45,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "X:/Coding/CPP/mp_os/CMakeLists.txt"
   "X:/Coding/CPP/mp_os/allocator/CMakeLists.txt"
   "X:/Coding/CPP/mp_os/allocator/allocator/CMakeLists.txt"
+  "X:/Coding/CPP/mp_os/allocator/allocator_boundary_tags/CMakeLists.txt"
+  "X:/Coding/CPP/mp_os/allocator/allocator_boundary_tags/tests/CMakeLists.txt"
   "X:/Coding/CPP/mp_os/allocator/allocator_global_heap/CMakeLists.txt"
   "X:/Coding/CPP/mp_os/allocator/allocator_global_heap/tests/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
@@ -106,6 +108,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/googletest-build/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "allocator/CMakeFiles/CMakeDirectoryInformation.cmake"
   "allocator/allocator/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "allocator/allocator_boundary_tags/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "allocator/allocator_boundary_tags/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "allocator/allocator_global_heap/CMakeFiles/CMakeDirectoryInformation.cmake"
   "allocator/allocator_global_heap/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -123,6 +127,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/DependInfo.cmake"
+  "allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/DependInfo.cmake"
+  "allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/DependInfo.cmake"
   "allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/DependInfo.cmake"
   "allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/DependInfo.cmake"
   )

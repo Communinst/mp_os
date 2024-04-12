@@ -2,6 +2,7 @@
 
 #include "../include/allocator_boundary_tags.h"
 
+
 allocator_boundary_tags::~allocator_boundary_tags()
 {
     throw not_implemented("allocator_boundary_tags::~allocator_boundary_tags()", "your code should be here...");
@@ -31,14 +32,43 @@ allocator_boundary_tags &allocator_boundary_tags::operator=(
     throw not_implemented("allocator_boundary_tags &allocator_boundary_tags::operator=(allocator_boundary_tags &&) noexcept", "your code should be here...");
 }
 
+//
+size_t allocator_boundary_tags::get_meta_size (
+    allocator *parent_allocator,
+    logger *logger,
+    allocator_with_fit_mode::fit_mode allocate_fit_mode) const noexcept
+{
+    return (sizeof(logger) + sizeof(parent_allocator) + sizeof(allocate_fit_mode) +
+            2 * sizeof(size_t) + sizeof(void *) + sizeof(unsigned char));
+}
+//
+
+//
 allocator_boundary_tags::allocator_boundary_tags(
     size_t space_size,
     allocator *parent_allocator,
     logger *logger,
     allocator_with_fit_mode::fit_mode allocate_fit_mode)
 {
-    throw not_implemented("allocator_boundary_tags::allocator_boundary_tags(size_t, allocator *, logger *, allocator_with_fit_mode::fit_mode)", "your code should be here...");
+    debug_with_guard(get_typename() + "constructor: Launched");
+    void *trusted_segment;
+
+    try
+    {
+        trusted_segment = (parent_allocator == nullptr)
+            ? (::operator new(get_meta_size(parent_allocator, logger, allocate_fit_mode) + space_size))
+            : parent_allocator->allocate(get_meta_size(parent_allocator, logger, allocate_fit_mode) + space_size, 1);
+    }
+    catch(std::exception const &ex)
+    {
+        error_with_guard(get_typename() + "constructor: Failed due to memory fault.");
+    }
+    
+    allocator **alloc = reinterpret_cast<allocator**>(_trusted_memory);
+
 }
+//
+
 
 [[nodiscard]] void *allocator_boundary_tags::allocate(
     size_t value_size,
@@ -76,5 +106,5 @@ inline logger *allocator_boundary_tags::get_logger() const
 
 inline std::string allocator_boundary_tags::get_typename() const noexcept
 {
-    throw not_implemented("inline std::string allocator_boundary_tags::get_typename() const noexcept", "your code should be here...");
+    return "Allocator_boundary_tags";
 }

@@ -7,6 +7,7 @@
 #include <logger_guardant.h>
 #include <typename_holder.h>
 
+
 class allocator_boundary_tags final:
     private allocator_guardant,
     public allocator_test_utils,
@@ -14,6 +15,13 @@ class allocator_boundary_tags final:
     private logger_guardant,
     private typename_holder
 {
+
+public:
+    enum class custom_mutex
+    {
+        free = 0,
+        occupied,
+    };
 
 private:
     
@@ -42,6 +50,13 @@ public:
         allocator *parent_allocator = nullptr,
         logger *logger = nullptr,
         allocator_with_fit_mode::fit_mode allocate_fit_mode = allocator_with_fit_mode::fit_mode::first_fit);
+
+public:
+
+    size_t get_meta_size (
+        allocator *parent_allocator,
+        logger *logger,
+        allocator_with_fit_mode::fit_mode allocate_fit_mode) const noexcept;
 
 public:
     
