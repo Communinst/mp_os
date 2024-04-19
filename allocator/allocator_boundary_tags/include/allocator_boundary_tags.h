@@ -48,15 +48,12 @@ public:
     explicit allocator_boundary_tags(
         size_t space_size,
         allocator *parent_allocator = nullptr,
-        logger *logger = nullptr,
+        logger *parent_logger = nullptr,
         allocator_with_fit_mode::fit_mode allocate_fit_mode = allocator_with_fit_mode::fit_mode::first_fit);
 
 public:
 
-    size_t get_meta_size (
-        allocator *parent_allocator,
-        logger *logger,
-        allocator_with_fit_mode::fit_mode allocate_fit_mode) const noexcept;
+    size_t get_meta_size () const noexcept;
 
 public:
     
@@ -72,17 +69,37 @@ public:
     inline void set_fit_mode(
         allocator_with_fit_mode::fit_mode mode) override;
 
-private:
-    
-    inline allocator *get_allocator() const override;
-
 public:
     
     std::vector<allocator_test_utils::block_info> get_blocks_info() const noexcept override;
 
 private:
     
+    inline allocator *get_allocator() const override;
+
+private:
+    
     inline logger *get_logger() const override;
+
+private:
+
+    inline allocator_with_fit_mode::fit_mode allocator_boundary_tags::get_fit_mode() const noexcept;
+
+private:
+
+    inline std::mutex *allocator_boundary_tags::get_mutex() const noexcept;
+
+private: 
+
+    inline size_t &allocator_boundary_tags::get_available() const noexcept;
+
+private:
+
+    inline size_t &allocator_boundary_tags::get_occupied() const noexcept;
+
+private:
+
+    inline void *get_void() const noexcept;
 
 private:
     
