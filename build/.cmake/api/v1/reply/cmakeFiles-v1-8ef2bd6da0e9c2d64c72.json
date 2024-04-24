@@ -222,10 +222,16 @@
 			"path" : "logger/logger/CMakeLists.txt"
 		},
 		{
-			"path" : "logger/server_logger/CMakeLists.txt"
+			"path" : "allocator/CMakeLists.txt"
 		},
 		{
-			"path" : "logger/server_logger/tests/CMakeLists.txt"
+			"path" : "allocator/allocator/CMakeLists.txt"
+		},
+		{
+			"path" : "allocator/allocator_boundary_tags/CMakeLists.txt"
+		},
+		{
+			"path" : "allocator/allocator_boundary_tags/tests/CMakeLists.txt"
 		},
 		{
 			"isCMake" : true,
@@ -322,28 +328,6 @@
 		{
 			"isGenerated" : true,
 			"path" : "build/_deps/googletest-src/googletest/cmake/gtest_main.pc.in"
-		},
-		{
-			"path" : "allocator/CMakeLists.txt"
-		},
-		{
-			"path" : "allocator/allocator/CMakeLists.txt"
-		},
-		{
-			"path" : "allocator/allocator_boundary_tags/CMakeLists.txt"
-		},
-		{
-			"path" : "allocator/allocator_boundary_tags/tests/CMakeLists.txt"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "X:/CMake/share/cmake-3.28/Modules/FetchContent.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
 		},
 		{
 			"path" : "allocator/allocator_global_heap/CMakeLists.txt"

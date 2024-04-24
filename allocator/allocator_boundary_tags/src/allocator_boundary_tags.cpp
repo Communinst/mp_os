@@ -3,63 +3,90 @@
 #include "mutex"
 #include "../include/allocator_boundary_tags.h"
 
-
+//+
 allocator_boundary_tags::~allocator_boundary_tags()
 {
-    throw not_implemented("allocator_boundary_tags::~allocator_boundary_tags()", "your code should be here...");
-}
+    trace_with_guard(get_typename() + "destructor: Called.\n");
 
-allocator_boundary_tags::allocator_boundary_tags(
-    allocator_boundary_tags const &other)
-{
-    throw not_implemented("allocator_boundary_tags::allocator_boundary_tags(allocator_boundary_tags const &)", "your code should be here...");
-}
+    auto *logger = get_logger();
 
-allocator_boundary_tags &allocator_boundary_tags::operator=(
-    allocator_boundary_tags const &other)
-{
-    throw not_implemented("allocator_boundary_tags &allocator_boundary_tags::operator=(allocator_boundary_tags const &)", "your code should be here...");
-}
+    get_mutex().~mutex();
+    deallocate_with_guard(_trusted_memory);
 
-allocator_boundary_tags::allocator_boundary_tags(
-    allocator_boundary_tags &&other) noexcept
-{
-    throw not_implemented("allocator_boundary_tags::allocator_boundary_tags(allocator_boundary_tags &&) noexcept", "your code should be here...");
-}
+    if (logger != nullptr)
+    {
+        logger->log(get_typename() + "destructor: Succesfully completed.\n", logger::severity::debug);
+    }
 
-allocator_boundary_tags &allocator_boundary_tags::operator=(
-    allocator_boundary_tags &&other) noexcept
-{
-    throw not_implemented("allocator_boundary_tags &allocator_boundary_tags::operator=(allocator_boundary_tags &&) noexcept", "your code should be here...");
 }
-
 //
-size_t allocator_boundary_tags::get_meta_size () const noexcept
+
+//+
+allocator_boundary_tags::allocator_boundary_tags(
+    allocator_boundary_tags &&other) noexcept :
+    _trusted_memory(&other._trusted_memory)
+{
+    trace_with_guard(get_typename() + "move_constructor: Move constructor has been launched.\n");
+
+    other._trusted_memory = nullptr;
+
+    trace_with_guard(get_typename() + "move_constructor: Move constructor succeed.\n");
+}
+//
+
+//+
+allocator_boundary_tags &allocator_boundary_tags::operator=(
+    allocator_boundary_tags &&other) noexcept
+{
+    trace_with_guard(get_typename() + "move_operator=: Move operator= has been launched.\n");
+
+    if (_trusted_memory != &other._trusted_memory)
+    {
+
+        get_mutex().~mutex();
+        deallocate_with_guard(_trusted_memory);
+
+        _trusted_memory = &other._trusted_memory;
+        other._trusted_memory = nullptr;
+
+    }
+
+    trace_with_guard(get_typename() + "move_constructor: Move operator= succeed.\n");
+
+    return *this;
+}
+//
+
+//+
+allocator::block_size_t allocator_boundary_tags::get_allocator_meta_size () const noexcept
 {
     return (sizeof(logger*) + sizeof(allocator*) + sizeof(allocator_with_fit_mode::fit_mode) +
-            2 * sizeof(size_t) + sizeof(void *) + sizeof(std::mutex));
+            2 * sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t *) + sizeof(std::mutex));
 }
 //
 
-//
+//+
 allocator_boundary_tags::allocator_boundary_tags(
     size_t space_size,
     allocator *parent_allocator,
     logger *parent_logger,
     allocator_with_fit_mode::fit_mode allocate_fit_mode)
 {
-    debug_with_guard(get_typename() + "constructor: Launched");
+    if (parent_allocator != nullptr)
+    {
+        parent_logger->log(get_typename() + "constructor: Launched.\n", logger::severity::debug);
+    }
     void *trusted_segment;
 
     try
     {
         trusted_segment = (parent_allocator == nullptr)
-            ? (::operator new(get_meta_size() + space_size))
-            : parent_allocator->allocate(get_meta_size() + space_size, 1);
+            ? (::operator new(get_allocator_meta_size() + space_size))
+            : parent_allocator->allocate(get_allocator_meta_size() + space_size, 1);
     }
     catch(std::exception const &ex)
     {
-        error_with_guard(get_typename() + "constructor: Failed due to memory fault.");
+        error_with_guard(get_typename() + "constructor: Failed due to memory fault.\n");
     }
 
     auto *raw = reinterpret_cast<unsigned char *>(trusted_segment);
@@ -69,35 +96,210 @@ allocator_boundary_tags::allocator_boundary_tags(
     *reinterpret_cast<allocator_with_fit_mode::fit_mode*>(raw += sizeof(logger*)) = allocate_fit_mode;
     new (reinterpret_cast<std::mutex*>(raw += sizeof(allocator_with_fit_mode::fit_mode))) std::mutex();
     *reinterpret_cast<block_size_t*>(raw += sizeof(std::mutex)) = space_size;
-    *reinterpret_cast<block_size_t*>(raw += sizeof(block_size_t)) = 0;
-    *reinterpret_cast<void**>(raw += sizeof(block_size_t)) = nullptr;
+    *reinterpret_cast<block_size_t*>(raw += sizeof(block_size_t)) = space_size;
+    *reinterpret_cast<block_pointer_t**>(raw += sizeof(block_size_t)) = nullptr;
 
-    debug_with_guard(get_typename() + "constructor: Successfully complete.");
+    debug_with_guard(get_typename() + "constructor: Successfully complete.\n");
 
 }
 //
 
-
+//+
 [[nodiscard]] void *allocator_boundary_tags::allocate(
     size_t value_size,
     size_t values_count)
 {
-    
-}
 
+    std::lock_guard<std::mutex> guard_mutex(get_mutex());
+
+    debug_with_guard(get_typename() + "allocate: Allocating segment of appropriate size...\n");
+    
+    allocator_with_fit_mode::fit_mode fmode = get_fit_mode();
+    long long int redundant_size = (fmode == allocator_with_fit_mode::fit_mode::the_worst_fit)
+        ? LONG_LONG_MIN
+        : LONG_LONG_MAX;
+
+    auto allocator_meta_size = get_allocator_meta_size();
+    auto block_meta_size = get_block_meta_size();
+    allocator::block_size_t required_size = block_meta_size + value_size * values_count;
+
+    auto *raw = reinterpret_cast<unsigned char*>(_trusted_memory);
+    auto *edge = raw + allocator_meta_size + get_allocated();
+    
+    auto *left = raw + allocator_meta_size;
+    auto *right = reinterpret_cast<unsigned char*>(get_void());
+    allocator::block_pointer_t prev;
+
+    unsigned char *appropriate_segment = nullptr;
+
+    while (left <= edge)
+    {
+        long long int buff = 0;
+        prev = get_block_prev_occupied_ptr(*reinterpret_cast<allocator::block_pointer_t*>(right));
+        if (right == nullptr)
+        {
+            right = edge;
+        }
+
+        if (right == edge || right - left >= required_size)
+        {
+            buff = right - left - required_size;
+
+            if (redundant_size < 0)
+            {
+                error_with_guard(get_typename() + "allocate: Allocation failed due to shortage of space.\n");
+                debug_with_guard(get_typename() + "allocate: Allocation failed due to shortage of space.\n");
+                throw std::runtime_error("Lack of space.\n");
+            }
+
+            buff = (buff >= block_meta_size) 
+                ? 0
+                : buff;
+
+            if (fmode == allocator_with_fit_mode::fit_mode::first_fit)
+            {
+                appropriate_segment = left;
+                break;
+            }
+            
+            if (fmode == allocator_with_fit_mode::fit_mode::the_best_fit && redundant_size > buff)
+            {
+                redundant_size = buff;
+                appropriate_segment = left;
+            }
+
+            else if (fmode == allocator_with_fit_mode::fit_mode::the_worst_fit && redundant_size < buff)
+            {
+                redundant_size = buff;
+                appropriate_segment = left;
+                
+            }
+        }
+
+        left = right + block_meta_size + get_block_allocated(right);
+        right = reinterpret_cast<unsigned char*>(get_block_next_occupied_ptr(right));
+    }
+
+    *reinterpret_cast<allocator**>(appropriate_segment) = this;
+
+    *reinterpret_cast<allocator::block_size_t*>(appropriate_segment += sizeof(allocator*)) 
+        = value_size * values_count + redundant_size;
+
+    if (redundant_size)
+    {
+        warning_with_guard(get_typename() + "allocate: " + std::to_string(redundant_size) 
+            + " bytes were added to requested size.\n");
+    }
+    
+    *reinterpret_cast<allocator::block_pointer_t*>(appropriate_segment += sizeof(allocator::block_size_t)) = 
+        (right == edge) 
+            ? nullptr
+            : *reinterpret_cast<allocator::block_pointer_t*>(right);
+
+
+    *reinterpret_cast<allocator::block_pointer_t*>(appropriate_segment += sizeof(allocator::block_pointer_t*)) = prev;
+    
+    if (prev != nullptr)
+    {
+        *reinterpret_cast<allocator::block_pointer_t**>(get_block_next_occupied_ptr(prev)) 
+            = reinterpret_cast<allocator::block_pointer_t*>(appropriate_segment);
+    }
+    if (right != edge)
+    {
+        *reinterpret_cast<allocator::block_pointer_t**>(get_block_prev_occupied_ptr(right)) 
+            = reinterpret_cast<allocator::block_pointer_t*>(appropriate_segment);
+    }
+
+    get_available() -= (value_size * values_count + redundant_size + block_meta_size);
+
+    information_with_guard(get_typename() + "allocate: Amount of available bytes: " + std::to_string(get_available()) + '\n');
+
+    std::vector<allocator_test_utils::block_info> blocks_data = get_blocks_info();
+    debug_with_guard(get_typename() + "Current memory state:\n|");
+    for (allocator_test_utils::block_info &block : blocks_data)
+    {
+        std::string state = block.is_block_occupied
+            ? "occup"
+            : "avail";
+        debug_with_guard('<' + state + ">:" + std::to_string(block.block_size) + " |");
+    }
+
+    debug_with_guard('\n' + get_typename() + "allocate: Allocating successfully completed.\n");
+    
+    return *reinterpret_cast<void**>(appropriate_segment += sizeof(allocator::block_pointer_t*));;  
+
+}
+//
+
+//+
 void allocator_boundary_tags::deallocate(
     void *at)
 {
-    throw not_implemented("void allocator_boundary_tags::deallocate(void *)", "your code should be here...");
-}
+    std::lock_guard<std::mutex> guard_mutex(get_mutex());
 
+    debug_with_guard(get_typename() + "deallocate: Deallocating transfered segment...\n");
+    if (at == nullptr)
+    {
+        debug_with_guard(get_typename() + "deallocate: Segment is corrupted.\n");
+    }
+
+    std::string byte_state = get_byte_state(at);
+    debug_with_guard(get_typename() + "deallocate: Current memory state:" + byte_state + '\n');
+
+    auto *next = get_block_next_occupied_ptr(at);
+    auto *prev = get_block_prev_occupied_ptr(at);
+    
+    if (prev != nullptr)
+    {
+        *reinterpret_cast<void**>(get_block_next_occupied_ptr(prev)) = next;
+    }
+    if (next != nullptr)
+    {
+        *reinterpret_cast<void**>(get_block_prev_occupied_ptr(next)) = prev;
+    }
+    
+    *reinterpret_cast<allocator**>(get_block_allocator(at)) = nullptr;
+    get_block_allocated(at) = 0;
+    *reinterpret_cast<allocator::block_pointer_t**>(get_block_next_occupied_ptr(at)) = nullptr;
+    *reinterpret_cast<allocator::block_pointer_t**>(get_block_prev_occupied_ptr(at)) = nullptr;
+
+    get_available() -= get_block_allocated(at);
+
+    debug_with_guard(get_typename() + "deallocate: Deallocation succeed.\n");
+
+}
+//
+
+//+
+std::string allocator_boundary_tags::get_byte_state(void *at) const noexcept
+{
+    trace_with_guard(get_typename() + "get_byte_state: Called and ontained.\n");
+
+    auto *raw = reinterpret_cast<unsigned char *>(at);
+    allocator::block_size_t mem_size = get_block_allocated(at);
+    std::string result;
+
+    for (int i = 0; i < mem_size; i++)
+    {
+        result += *(raw + i);
+        result += ' ';
+    }
+
+    return result;
+}
+//
+
+//+
 inline void allocator_boundary_tags::set_fit_mode(
     allocator_with_fit_mode::fit_mode mode)
 {
-    throw not_implemented("inline void allocator_boundary_tags::set_fit_mode(allocator_with_fit_mode::fit_mode)", "your code should be here...");
-}
+    trace_with_guard(get_typename() + "set_fit_mode: Called and completed.");
+    get_fit_mode() = mode;
 
+}
 //
+
+//+
 inline allocator *allocator_boundary_tags::get_allocator() const
 {
     trace_with_guard(get_typename() + "get_allocator: Called and obtained.");
@@ -106,17 +308,18 @@ inline allocator *allocator_boundary_tags::get_allocator() const
 }
 //
 
-//
+//+
 inline logger *allocator_boundary_tags::get_logger() const
 {
+    if ()
     trace_with_guard(get_typename() + "get_logger: Called and obtained.");
     auto *raw = reinterpret_cast<unsigned char *>(_trusted_memory);
     return (*reinterpret_cast<logger**>(raw + sizeof(allocator*)));
 }
 //
 
-//
-inline allocator_with_fit_mode::fit_mode allocator_boundary_tags::get_fit_mode() const
+//+
+inline allocator_with_fit_mode::fit_mode &allocator_boundary_tags::get_fit_mode() const noexcept
 {
     trace_with_guard(get_typename() + "get_fit_mode: Called and obtained.");
     auto *raw = reinterpret_cast<unsigned char *>(_trusted_memory);
@@ -125,54 +328,136 @@ inline allocator_with_fit_mode::fit_mode allocator_boundary_tags::get_fit_mode()
 }
 //
 
-//
-inline std::mutex *allocator_boundary_tags::get_mutex() const
+//+
+inline std::mutex &allocator_boundary_tags::get_mutex() const noexcept
 {
     trace_with_guard(get_typename() + "get_mutex: Called and obtained.");
     auto *raw = reinterpret_cast<unsigned char *>(_trusted_memory);
-    return (reinterpret_cast<std::mutex*>(raw + sizeof(logger*) + sizeof(allocator*)
+    return (*reinterpret_cast<std::mutex*>(raw + sizeof(logger*) + sizeof(allocator*)
                 + sizeof(allocator_with_fit_mode::fit_mode)));
 }
 //
 
-//
-inline size_t &allocator_boundary_tags::get_available() const
+//+
+inline allocator::block_size_t &allocator_boundary_tags::get_allocated() const noexcept
 {
     trace_with_guard(get_typename() + "get_available: Called and obtained.");
     auto *raw = reinterpret_cast<unsigned char *>(_trusted_memory);
-    return (*reinterpret_cast<size_t*>(raw + sizeof(logger*) + sizeof(allocator*)
+    return (*reinterpret_cast<allocator::block_size_t*>(raw + sizeof(logger*) + sizeof(allocator*)
                 + sizeof(allocator_with_fit_mode::fit_mode) + sizeof(std::mutex)));
 }
 //
 
-//
-inline size_t &allocator_boundary_tags::get_occupied() const
+//+
+inline allocator::block_size_t &allocator_boundary_tags::get_available() const noexcept
 {
-    trace_with_guard(get_typename() + "get_occupied: Called and obtained.");
+    trace_with_guard(get_typename() + "get_available: Called and obtained.");
     auto *raw = reinterpret_cast<unsigned char *>(_trusted_memory);
     return (*reinterpret_cast<size_t*>(raw + sizeof(logger*) + sizeof(allocator*)
             + sizeof(allocator_with_fit_mode::fit_mode) + sizeof(std::mutex) + sizeof(size_t)));
 }
 //
 
-//
-inline void *allocator_boundary_tags::get_void() const noexcept
+//+
+inline allocator::block_pointer_t allocator_boundary_tags::get_void() const noexcept
 {
     trace_with_guard(get_typename() + "get_void: Called and obtained.");
     auto *raw = reinterpret_cast<unsigned char *>(_trusted_memory);
-    return (*reinterpret_cast<void**>(raw + sizeof(logger*) + sizeof(allocator*)
-            + sizeof(allocator_with_fit_mode::fit_mode) + sizeof(std::mutex) + 2 * sizeof(size_t)));
+    return (*reinterpret_cast<allocator::block_pointer_t**>(raw + sizeof(logger*) + sizeof(allocator*)
+            + sizeof(allocator_with_fit_mode::fit_mode) + sizeof(std::mutex) + 2 * sizeof(allocator::block_size_t)));
 }
 //
 
+//+
+inline allocator::block_size_t allocator_boundary_tags::get_block_meta_size() const noexcept 
+{
+    trace_with_guard(get_typename() + "get_block_meta_size: Called and obtained.");
+    return (sizeof(allocator*) + sizeof(allocator::block_size_t) + 2 * sizeof(allocator::block_pointer_t));
+}
+//
 
+//+
+inline allocator* allocator_boundary_tags::get_block_allocator(allocator::block_pointer_t at) const noexcept
+{
+    trace_with_guard(get_typename() + "get_block_allocator: Called and obtained.");
+    return (*reinterpret_cast<allocator**>(at));
+}
+//
+
+//+
+inline allocator::block_size_t &allocator_boundary_tags::get_block_allocated(allocator::block_pointer_t at) const noexcept
+{
+    trace_with_guard(get_typename() + "get_block_allocated: Called and obtained.");
+    auto *raw = reinterpret_cast<unsigned char *>(at);
+    return (*reinterpret_cast<allocator::block_size_t*>(raw + sizeof(allocator*)));
+}
+//
+
+//+
+inline allocator::block_pointer_t allocator_boundary_tags::get_block_prev_occupied_ptr(allocator::block_pointer_t at) const noexcept
+{
+    trace_with_guard(get_typename() + "get_block_prev_occupied_ptr: Called and obtained.");
+    auto *raw = reinterpret_cast<unsigned char *>(at);
+    return (*reinterpret_cast<allocator::block_pointer_t*>(raw + sizeof(allocator*) + 
+        sizeof(allocator::block_size_t)));
+}
+//
+
+//+
+inline allocator::block_pointer_t allocator_boundary_tags::get_block_next_occupied_ptr(allocator::block_pointer_t at) const noexcept
+{
+    trace_with_guard(get_typename() + "get_block_next_occupied_ptr: Called and obtained.");
+    auto *raw = reinterpret_cast<unsigned char *>(at);
+    return (*reinterpret_cast<allocator::block_pointer_t*>(raw + sizeof(allocator*) + 
+        sizeof(allocator::block_size_t) + sizeof(allocator::block_pointer_t)));
+}
+//
+
+//+
 std::vector<allocator_test_utils::block_info> allocator_boundary_tags::get_blocks_info() const noexcept
 {
-    throw not_implemented("std::vector<allocator_test_utils::block_info> allocator_boundary_tags::get_blocks_info() const noexcept", "your code should be here...");
+    std::lock_guard<std::mutex> guard_mutex(get_mutex());
+
+    debug_with_guard(get_typename() +  "get_blocks_info: Handling state of blocks...\n");
+
+    std::vector<allocator_test_utils::block_info> blocks_data;
+    allocator::block_size_t block_meta_size = get_block_meta_size();
+
+    unsigned char *previous_occupied = reinterpret_cast<unsigned char*>(_trusted_memory) + get_allocator_meta_size();
+    auto *edge = previous_occupied + get_allocated();
+    auto *current_occupied = reinterpret_cast<unsigned char*>(get_void());
+    bool state = 0;
+
+    while (previous_occupied != edge)
+    {
+        allocator::block_size_t size = 0;
+        bool state = 0;
+        current_occupied = current_occupied == nullptr
+            ? edge
+            : current_occupied;
+
+        if (previous_occupied != current_occupied)
+        {
+            state = 0;
+            size = current_occupied - previous_occupied;
+            blocks_data.push_back({size, state});
+            previous_occupied = current_occupied;
+        }
+
+        state = 1;
+        size = get_block_allocated(current_occupied);
+        current_occupied = reinterpret_cast<unsigned char*>(get_block_next_occupied_ptr(current_occupied));
+        previous_occupied += size + block_meta_size;
+        blocks_data.push_back({size, state});
+    }
+
+    debug_with_guard(get_typename() +  "get_blocks_info: Lowdown obtained successfully.\n");
+
+    return blocks_data;
 }
-
-
 //
+
+//+
 inline std::string allocator_boundary_tags::get_typename() const noexcept
 {
     return "Allocator_boundary_tags";
