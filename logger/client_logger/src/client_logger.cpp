@@ -151,7 +151,7 @@ logger const *client_logger::log(
 
         if ((buff_data.second).find(severity) != (buff_data.second).end())
         {
-            *(buff_data.first) << log;
+            (*(buff_data.first) << log).flush();
         }
 
     }

@@ -69,24 +69,50 @@ public:
     
     std::vector<allocator_test_utils::block_info> get_blocks_info() const noexcept override;
 
+    inline void display_blocks(std::vector<allocator_test_utils::block_info> blocks_data) const noexcept;
+    
+    
+private:
+
+    std::vector<allocator_test_utils::block_info> get_blocks_info_with_guard() const noexcept;
+
+    std::vector<allocator_test_utils::block_info> collect_blocks_info() const noexcept;
+
+    
+
 private:
     
     inline block_size_t get_allocator_meta_size () const noexcept;
+
     inline allocator *get_allocator () const override;
+
     inline logger *get_logger () const override;
+
     inline allocator_with_fit_mode::fit_mode &get_fit_mode () const noexcept;
+
     inline std::mutex &get_mutex () const noexcept;
+    
     inline block_size_t &get_allocated () const noexcept;
+
     inline block_size_t &get_available () const noexcept;
-    inline block_pointer_t get_void () const noexcept;
+
+    inline block_pointer_t *get_void () const noexcept;
 
 private:
 
     inline allocator::block_size_t get_block_meta_size () const noexcept;
+
     inline allocator* get_block_allocator (allocator::block_pointer_t at) const noexcept;
+
     inline allocator::block_size_t &get_block_allocated (void *at) const noexcept;
-    inline allocator::block_pointer_t get_block_prev_occupied_ptr (allocator::block_pointer_t at) const noexcept;
-    inline allocator::block_pointer_t get_block_next_occupied_ptr (allocator::block_pointer_t at) const noexcept;
+
+    inline allocator::block_pointer_t *get_block_prev_occupied_ptr(allocator::block_pointer_t at) const noexcept;
+
+    inline allocator::block_pointer_t *get_block_next_occupied_ptr (allocator::block_pointer_t at) const noexcept;
+
+public:
+
+    unsigned char *show_edge_address() const noexcept;
 
 private:
 

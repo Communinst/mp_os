@@ -4,17 +4,11 @@
 #include <client_logger_builder.h>
 #include <logger.h>
 #include <logger_builder.h>
-#include <gtest/gtest.h>
-#include <allocator.h>
-#include <allocator_boundary_tags.h>
-#include <client_logger_builder.h>
-#include <logger.h>
-#include <logger_builder.h>
-
 
 //Static map of client_logger
 std::unordered_map<std::string, std::pair<std::ostream*, size_t>> client_logger::_loggers_count;
 //
+
 
 
 logger *create_logger(
@@ -43,20 +37,31 @@ logger *create_logger(
 
 const size_t block_meta_size = sizeof(allocator::block_size_t) + sizeof(allocator*) + 2 * sizeof(allocator::block_pointer_t);
 
+
 TEST(positiveTests, test1)
 {
     logger *logger = create_logger(std::vector<std::pair<std::string, logger::severity>>
         {
             {
-                "allocator_boundary_tags_tests_logs_positive_test_plain_usage.txt",
+                "Info_idiot-savant_pos1.txt",
                 logger::severity::information
             },
             {
-                "", logger::severity::debug
+                "Tracer_idiot-savant_pos1.txt",
+                logger::severity::trace
             },
             {
-                "", logger::severity::information
-            }
+                "Error_idiot-savant_pos1.txt",
+                logger::severity::error
+            },
+            {
+                "Bug_idiot-savant_pos1.txt",
+                logger::severity::debug
+            },
+            {
+                "Warning_idiot-savant_pos1.txt",
+                logger::severity::warning
+            },
         });
     allocator *subject = new allocator_boundary_tags(sizeof(int) * 100, nullptr, logger, allocator_with_fit_mode::fit_mode::first_fit);
     
@@ -94,15 +99,25 @@ TEST(positiveTests, test2)
     logger *logger_instance = create_logger(std::vector<std::pair<std::string, logger::severity>>
         {
             {
-                "allocator_boundary_tags_tests_logs_false_positive_test_1.txt",
+                "Info_idiot-savant_pos2.txt",
                 logger::severity::information
             },
             {
-                "", logger::severity::debug
+                "Tracer_idiot-savant_pos2.txt",
+                logger::severity::trace
             },
             {
-                "", logger::severity::warning
-            }
+                "Error_idiot-savant_pos2.txt",
+                logger::severity::error
+            },
+            {
+                "Bug_idiot-savant_pos2.txt",
+                logger::severity::debug
+            },
+            {
+                "Warning_idiot-savant_pos2.txt",
+                logger::severity::warning
+            },
         });
     allocator *allocator_instance = new allocator_boundary_tags(sizeof(unsigned char) * 300, nullptr, logger_instance, allocator_with_fit_mode::fit_mode::first_fit);
     

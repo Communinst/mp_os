@@ -1,0 +1,16 @@
+[22:12:17][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Launched.
+[22:12:17][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Successfully complete.
+[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 40 | <avail>: 328 |[22:12:22][25.04.2024][DEBUG]	Message: 
+Allocator_boundary_tags:: allocate: Allocation succeeded.
+[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 40 | <occup>: 40 | <avail>: 256 |[22:12:22][25.04.2024][DEBUG]	Message: 
+Allocator_boundary_tags:: allocate: Allocation succeeded.
+[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 40 | <occup>: 40 | <occup>: 40 | <avail>: 184 |[22:12:22][25.04.2024][DEBUG]	Message: 
+Allocator_boundary_tags:: allocate: Allocation succeeded.
+[22:12:25][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[22:12:39][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º 
