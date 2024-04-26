@@ -58,151 +58,6 @@
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_fit_mode: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info_with_guard: Launched.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Obtaining state of blocks...
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Lowdown obtained successfully.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info_with_guard: Succeeded.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocator: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_byte_state: Launched and ontained.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_prev_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_prev_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info_with_guard: Launched.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Obtaining state of blocks...
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Lowdown obtained successfully.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info_with_guard: Succeeded.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: set_fit_mode: Launched and completed.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_fit_mode: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_fit_mode: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info_with_guard: Launched.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Obtaining state of blocks...
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Lowdown obtained successfully.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info_with_guard: Succeeded.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: set_fit_mode: Launched and completed.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_fit_mode: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_fit_mode: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_prev_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info_with_guard: Launched.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Obtaining state of blocks...
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Lowdown obtained successfully.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info_with_guard: Succeeded.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocator: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_byte_state: Launched and ontained.
@@ -227,10 +82,6 @@
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Lowdown obtained successfully.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info_with_guard: Succeeded.
@@ -239,18 +90,14 @@
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_fit_mode: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocator: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_byte_state: Launched and ontained.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_prev_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_prev_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
@@ -273,6 +120,20 @@
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Obtaining state of blocks...
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_blocks_info: Lowdown obtained successfully.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocator: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_byte_state: Launched and ontained.
@@ -282,7 +143,8 @@
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_prev_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
-[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_next_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_void: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_prev_occupied_ptr: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_allocated: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
 [19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.

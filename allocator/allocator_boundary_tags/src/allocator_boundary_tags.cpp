@@ -1,6 +1,9 @@
 #include <not_implemented.h>
 
 #include "mutex"
+#include <iostream>
+#include <sstream>
+#include <iomanip>
 #include "../include/allocator_boundary_tags.h"
 
 //+
@@ -105,7 +108,7 @@ allocator_boundary_tags::allocator_boundary_tags(
 }
 //
 
-//+
+/*
 [[nodiscard]] void *allocator_boundary_tags::allocate(
     size_t value_size,
     size_t values_count)
@@ -116,12 +119,13 @@ allocator_boundary_tags::allocator_boundary_tags(
     debug_with_guard(get_typename() + "allocate: Allocating segment of appropriate size...\n");
     
     allocator_with_fit_mode::fit_mode fmode = get_fit_mode();
-    long long int redundant_size = (fmode == allocator_with_fit_mode::fit_mode::the_worst_fit)
-        ? LONG_LONG_MIN
-        : LONG_LONG_MAX;
-
     auto allocator_meta_size = get_allocator_meta_size();
     auto block_meta_size = get_block_meta_size();
+    int redundant_size = (fmode == allocator_with_fit_mode::fit_mode::the_worst_fit)
+        ? 0
+        : block_meta_size + 1;
+
+    
     allocator::block_size_t required_size = block_meta_size + value_size * values_count;
 
     auto *raw = reinterpret_cast<unsigned char*>(_trusted_memory);
@@ -161,23 +165,25 @@ allocator_boundary_tags::allocator_boundary_tags(
                 ? 0
                 : buff;
 
-            redundant_size = buff;
-
-
-
             if (fmode == allocator_with_fit_mode::fit_mode::first_fit)
             {
                 appropriate_segment = left;
+                redundant_size = buff;
                 break;
             }
             
             if (fmode == allocator_with_fit_mode::fit_mode::the_best_fit && redundant_size > buff
-                || fmode == allocator_with_fit_mode::fit_mode::the_worst_fit && redundant_size < buff)
+                || fmode == allocator_with_fit_mode::fit_mode::the_worst_fit && redundant_size <= buff)
             {
                 appropriate_segment = left;
+                redundant_size = buff;
+                if (right == edge)
+                {
+                    break;
+                }
             }
         }
-        prev = left;
+        prev = right;
         left = right + block_meta_size + get_block_allocated(right);
         right = reinterpret_cast<unsigned char*>(*get_block_next_occupied_ptr(right));
     }
@@ -232,6 +238,159 @@ allocator_boundary_tags::allocator_boundary_tags(
     return reinterpret_cast<void*>(appropriate_segment += sizeof(allocator::block_pointer_t));;  
 
 }
+*/
+
+//+
+[[nodiscard]] void *allocator_boundary_tags::allocate(
+    size_t value_size,
+    size_t values_count)
+{
+
+    std::lock_guard<std::mutex> guard_mutex(get_mutex());
+
+    debug_with_guard(get_typename() + "allocate: Allocating segment of appropriate size...\n");
+    
+    allocator_with_fit_mode::fit_mode fmode = get_fit_mode();
+    
+    auto allocator_capacity = get_allocated();
+    auto block_meta_size = get_block_meta_size();
+    allocator::block_size_t required_size = block_meta_size + value_size * values_count;
+
+    if (allocator_capacity < required_size)
+    {
+        debug_with_guard(get_typename() +  "allocate: Allocation failed due to lack of space.\n")
+            ->error_with_guard(get_typename() +  "allocate: Allocation failed due to lack of space.\n");
+
+        throw std::bad_alloc();
+    }
+
+    auto allocator_meta_size = get_allocator_meta_size();
+    int redundant_size = (fmode == allocator_with_fit_mode::fit_mode::the_worst_fit)
+        ? -1
+        : block_meta_size + 1;
+
+    auto *raw = reinterpret_cast<unsigned char*>(_trusted_memory);
+    auto *edge = raw + allocator_meta_size + allocator_capacity;
+    
+    auto *left = raw + allocator_meta_size;
+
+    
+
+    auto *right = reinterpret_cast<unsigned char*>(*(get_void()));
+
+    allocator::block_pointer_t prev = nullptr;
+    allocator::block_pointer_t next = nullptr;
+    allocator::block_pointer_t prev_first = nullptr;
+
+    unsigned char *appropriate_segment = nullptr;
+
+    while (true)
+    {
+        right = right == nullptr 
+            ? edge
+            : right;
+
+        if (right == edge || right != left)
+        {
+            int buff = right - left - required_size;
+            if (buff < 0)
+            {
+                break;
+            }
+            buff = buff >= block_meta_size
+                ? 0
+                : buff;
+
+            if (fmode == allocator_with_fit_mode::fit_mode::first_fit)
+            {
+                appropriate_segment = left;
+                redundant_size = buff;
+                prev = prev_first;
+                next = right;
+                break;
+            }
+            if ((fmode == allocator_with_fit_mode::fit_mode::the_best_fit && redundant_size > buff)
+                || (fmode == allocator_with_fit_mode::fit_mode::the_worst_fit && redundant_size <= buff))
+            {
+                appropriate_segment = left;
+                redundant_size = buff;
+                prev = prev_first;
+                next = right;
+            }
+            if (right == edge)
+            {
+                break;
+            }
+            left = right;
+        }
+        
+        if (right == left)
+        {
+            prev_first = left;
+            left = right + block_meta_size + get_block_allocated(right);
+            right = reinterpret_cast<unsigned char *>(*get_block_next_occupied_ptr(right));
+        }
+
+    }
+    if (appropriate_segment == nullptr)
+    {
+        debug_with_guard(get_typename() + "allocate: Allocation failed due to lack of space.\n")
+            ->error_with_guard(get_typename() + "allocate: Allocation failed due to lack of space.\n");
+
+        throw std::bad_alloc();
+    }
+
+
+    if (prev == nullptr)
+    {
+        *(get_void()) = appropriate_segment;
+    }
+    else
+    {
+        *get_block_next_occupied_ptr(prev)
+            = appropriate_segment;
+    }
+
+    if (next != edge)
+    {   
+        *get_block_prev_occupied_ptr(next)
+            = appropriate_segment; 
+    }
+
+    *reinterpret_cast<allocator**>(appropriate_segment) = this;
+
+    auto temp4 = value_size * values_count + redundant_size;
+
+    *reinterpret_cast<allocator::block_size_t*>(appropriate_segment += sizeof(allocator*)) 
+        = temp4;
+
+    if (redundant_size)
+    {
+        warning_with_guard(get_typename() + "allocate: " + std::to_string(redundant_size) 
+            + " bytes were added to requested size.\n");
+    }
+
+    *reinterpret_cast<allocator::block_pointer_t*>(appropriate_segment += sizeof(allocator::block_size_t)) = prev;
+
+    *reinterpret_cast<allocator::block_pointer_t*>(appropriate_segment += sizeof(allocator::block_pointer_t)) = 
+        (next == edge) 
+            ? nullptr
+            : next;
+
+    get_available() -= required_size + redundant_size;
+    auto temp3 = get_available();
+
+    information_with_guard(get_typename() + "allocate: Amount of available bytes: " + std::to_string(get_available()) + '\n');
+
+    std::vector<allocator_test_utils::block_info> blocks_data = get_blocks_info_with_guard();
+
+    display_blocks(blocks_data);
+    
+    debug_with_guard('\n' + get_typename() + "allocate: Allocation succeeded.\n");
+
+    return reinterpret_cast<void*>(appropriate_segment += sizeof(allocator::block_pointer_t));;  
+
+}
 //
 
 //+
@@ -246,27 +405,46 @@ void allocator_boundary_tags::deallocate(
         debug_with_guard(get_typename() + "deallocate: Segment is corrupted.\n");
     }
 
-    std::string byte_state = get_byte_state(at);
-    debug_with_guard(get_typename() + "deallocate: Current memory state:" + byte_state + '\n');
+    auto block_meta_size = get_block_meta_size();
+    auto raw = reinterpret_cast<unsigned char *>(at) - block_meta_size;
 
-    auto *next = *get_block_next_occupied_ptr(at);
-    auto *prev = *get_block_prev_occupied_ptr(at);
+    if (this != get_block_allocator(raw))
+    {
+        debug_with_guard(get_typename() + "deallocate: Segment was transfered to the wrong allocator.\n");
+        throw std::logic_error("Wrong allocator.");
+    }
+
+    std::string byte_state = get_byte_state(at);
+    debug_with_guard(get_typename() + "deallocate: Current memory state: \n" + byte_state + '\n');
+
+    auto *next = *get_block_next_occupied_ptr(raw);
+    auto *prev = *get_block_prev_occupied_ptr(raw);
     
     if (prev != nullptr)
     {
         *get_block_next_occupied_ptr(prev) = next;
+    }
+    else
+    {
+        *get_void() = next;
     }
     if (next != nullptr)
     {
         *get_block_prev_occupied_ptr(next) = prev;
     }
     
-    *reinterpret_cast<allocator**>(get_block_allocator(at)) = nullptr;
-    get_block_allocated(at) = 0;
-    *get_block_next_occupied_ptr(at) = nullptr;
-    *get_block_prev_occupied_ptr(at) = nullptr;
+    //*reinterpret_cast<allocator**>(get_block_allocator(raw)) = nullptr;
 
-    get_available() -= get_block_allocated(at);
+    get_available() += get_block_allocated(raw) + block_meta_size;
+    //get_block_allocated(raw) = 0;
+    information_with_guard(get_typename() + "allocate: Amount of available bytes: " + std::to_string(get_available()) + '\n');
+
+    //*get_block_next_occupied_ptr(raw) = nullptr;
+    //*get_block_prev_occupied_ptr(raw) = nullptr;
+
+    std::vector<allocator_test_utils::block_info> blocks_data = get_blocks_info_with_guard();
+
+    display_blocks(blocks_data);
 
     debug_with_guard(get_typename() + "deallocate: Deallocation succeeded.\n");
 
@@ -274,22 +452,25 @@ void allocator_boundary_tags::deallocate(
 //
 
 //
-std::string allocator_boundary_tags::get_byte_state(void *at) const noexcept
+inline std::string allocator_boundary_tags::get_byte_state(void *at) const noexcept
 {
     trace_with_guard(get_typename() + "get_byte_state: Launched and ontained.\n");
 
     auto *raw = reinterpret_cast<unsigned char *>(at);
     allocator::block_size_t mem_size = get_block_allocated(raw - get_block_meta_size());
-    std::string result;
+    std::stringstream result;
 
     for (int i = 0; i < mem_size; i++)
     {
-        result += *(raw + i);
-        result += ' ';
+        result << std::hex << std::setw(2) << std::setfill('0') <<  static_cast<int>(*(raw + i)) << ' ';
     }
 
-    return result;
+    return result.str();
 }
+//
+
+//
+
 //
 
 //
@@ -490,9 +671,9 @@ std::vector<allocator_test_utils::block_info> allocator_boundary_tags::collect_b
         if (current_occupied != edge)
         {
             state = 1; 
-            size = get_block_allocated(current_occupied); 
+            size = get_block_allocated(current_occupied) + block_meta_size; 
             current_occupied = reinterpret_cast<unsigned char*>(*get_block_next_occupied_ptr(current_occupied)); 
-            previous_occupied += size + block_meta_size; 
+            previous_occupied += size; 
             
             blocks_data.push_back({size, state}); 
         }

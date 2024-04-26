@@ -1,16 +1,48 @@
-[22:12:17][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Launched.
-[22:12:17][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Successfully complete.
-[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
-[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
-| <occup>: 40 | <avail>: 328 |[22:12:22][25.04.2024][DEBUG]	Message: 
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Launched.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Successfully complete.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 72 | <avail>: 328 |[19:09:26][26.04.2024][DEBUG]	Message: 
 Allocator_boundary_tags:: allocate: Allocation succeeded.
-[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
-[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
-| <occup>: 40 | <occup>: 40 | <avail>: 256 |[22:12:22][25.04.2024][DEBUG]	Message: 
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 72 | <occup>: 72 | <avail>: 256 |[19:09:26][26.04.2024][DEBUG]	Message: 
 Allocator_boundary_tags:: allocate: Allocation succeeded.
-[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
-[22:12:22][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
-| <occup>: 40 | <occup>: 40 | <occup>: 40 | <avail>: 184 |[22:12:22][25.04.2024][DEBUG]	Message: 
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 72 | <occup>: 72 | <occup>: 72 | <avail>: 184 |[19:09:26][26.04.2024][DEBUG]	Message: 
 Allocator_boundary_tags:: allocate: Allocation succeeded.
-[22:12:25][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
-[22:12:39][25.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º  ð ­ º 
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: 
+0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 72 | <avail>: 72 | <occup>: 72 | <avail>: 184 |[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocation succeeded.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 72 | <avail>: 72 | <occup>: 72 | <occup>: 36 | <avail>: 148 |[19:09:26][26.04.2024][DEBUG]	Message: 
+Allocator_boundary_tags:: allocate: Allocation succeeded.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 72 | <occup>: 36 | <avail>: 36 | <occup>: 72 | <occup>: 36 | <avail>: 148 |[19:09:26][26.04.2024][DEBUG]	Message: 
+Allocator_boundary_tags:: allocate: Allocation succeeded.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: 
+0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <avail>: 72 | <occup>: 36 | <avail>: 36 | <occup>: 72 | <occup>: 36 | <avail>: 148 |[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocation succeeded.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: 
+0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <avail>: 72 | <occup>: 36 | <avail>: 108 | <occup>: 36 | <avail>: 148 |[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocation succeeded.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: 
+0d f0 ad ba 
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <avail>: 72 | <occup>: 36 | <avail>: 292 |[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocation succeeded.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: 
+0d f0 ad ba 
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <avail>: 400 |[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocation succeeded.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: destructor: Succesfully completed.

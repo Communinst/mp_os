@@ -1,0 +1,35 @@
+[19:09:32][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Launched.
+[19:09:32][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Successfully complete.
+[19:09:32][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[19:09:32][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 80 | <avail>: 170 |[19:09:32][26.04.2024][DEBUG]	Message: 
+Allocator_boundary_tags:: allocate: Allocation succeeded.
+[19:09:33][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Launched.
+[19:09:33][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[19:09:33][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 80 | <occup>: 134 | <avail>: 36 |[19:09:33][26.04.2024][DEBUG]	Message: 
+Allocator_boundary_tags:: allocate: Allocation succeeded.
+[19:09:33][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Successfully complete.
+[19:09:34][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[19:09:34][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 50 |[19:09:34][26.04.2024][DEBUG]	Message: 
+Allocator_boundary_tags:: allocate: Allocation succeeded.
+[19:09:34][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[19:09:34][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Segment was transfered to the wrong allocator.
+[19:09:35][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[19:09:35][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: 
+0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 
+[19:09:35][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <avail>: 50 |[19:09:35][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocation succeeded.
+[19:09:35][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[19:09:35][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: 
+a0 38 8a c5 e1 01 00 00 00 38 8a c5 e1 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 32 00 00 00 00 00 00 00 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 73 a1 c5 e1 01 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 ad ba 0d f0 
+[19:09:35][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <occup>: 80 | <avail>: 170 |[19:09:35][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocation succeeded.
+[19:09:35][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: destructor: Succesfully completed.
+[19:09:36][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocating transfered segment...
+[19:09:36][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Current memory state: 
+10 5d 2b e6 f7 7f 00 00 40 5d 2b e6 f7 7f 00 00 40 60 2b e6 f7 7f 00 00 b0 5c 2b e6 f7 7f 00 00 e0 5c 2b e6 f7 7f 00 00 44 73 a1 c5 e1 01 00 00 
+[19:09:36][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: Current memory state:
+| <avail>: 250 |[19:09:36][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: deallocate: Deallocation succeeded.
+[19:09:36][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: destructor: Succesfully completed.

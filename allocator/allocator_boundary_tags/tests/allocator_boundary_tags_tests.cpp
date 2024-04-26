@@ -151,15 +151,25 @@ TEST(falsePositiveTests, test1)
     logger *logger_instance = create_logger(std::vector<std::pair<std::string, logger::severity>>
         {
             {
-                "allocator_boundary_tags_tests_logs_false_positive_test_2.txt",
+                "Info_idiot-savant_neg1.txt",
                 logger::severity::information
             },
             {
-                "", logger::severity::debug
+                "Tracer_idiot-savant_neg1.txt",
+                logger::severity::trace
             },
             {
-                "", logger::severity::error
-            }
+                "Error_idiot-savant_neg1.txt",
+                logger::severity::error
+            },
+            {
+                "Bug_idiot-savant_neg1.txt",
+                logger::severity::debug
+            },
+            {
+                "Warning_idiot-savant_neg1.txt",
+                logger::severity::warning
+            },
         });
     allocator *allocator_instance = new allocator_boundary_tags(3000, nullptr, logger_instance, allocator_with_fit_mode::fit_mode::first_fit);
     
@@ -174,18 +184,25 @@ TEST(falsePositiveTests, test2)
     logger *logger_instance = create_logger(std::vector<std::pair<std::string, logger::severity>>
         {
             {
-                "allocator_boundary_tags_tests_logs_false_positive_test_3.txt",
+                "Info_idiot-savant_neg2.txt",
                 logger::severity::information
             },
             {
-                "", logger::severity::debug
+                "Tracer_idiot-savant_neg2.txt",
+                logger::severity::trace
             },
             {
-                "", logger::severity::information
+                "Error_idiot-savant_neg2.txt",
+                logger::severity::error
             },
             {
-                "", logger::severity::error
-            }
+                "Bug_idiot-savant_neg2.txt",
+                logger::severity::debug
+            },
+            {
+                "Warning_idiot-savant_neg2.txt",
+                logger::severity::warning
+            },
         });
     allocator *allocator_parent = new allocator_boundary_tags(250, nullptr, logger_instance, allocator_with_fit_mode::fit_mode::first_fit);
     

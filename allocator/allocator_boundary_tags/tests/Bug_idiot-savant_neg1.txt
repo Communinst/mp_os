@@ -1,0 +1,5 @@
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Launched.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: constructor: Successfully complete.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocating segment of appropriate size...
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: allocate: Allocation failed due to lack of space.
+[19:09:26][26.04.2024][DEBUG]	Message: Allocator_boundary_tags:: destructor: Succesfully completed.

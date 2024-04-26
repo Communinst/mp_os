@@ -116,7 +116,8 @@ public:
 
 private:
 
-    std::string get_byte_state(void *at) const noexcept;
+    inline std::string get_byte_state(void *at) const noexcept;
+    
     inline std::string get_typename() const noexcept override;
     
 };

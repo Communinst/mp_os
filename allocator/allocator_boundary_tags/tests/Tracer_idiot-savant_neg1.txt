@@ -1,0 +1,14 @@
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_fit_mode: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_available: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_block_meta_size: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: destructor: Launched.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_mutex: Launched and obtained.[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_logger: Launched and successfully completed.
+[19:09:26][26.04.2024][TRACE]	Message: Allocator_boundary_tags:: get_allocator: Launched and obtained.
