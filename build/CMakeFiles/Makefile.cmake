@@ -49,6 +49,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "X:/Coding/CPP/mp_os/allocator/allocator_boundary_tags/tests/CMakeLists.txt"
   "X:/Coding/CPP/mp_os/allocator/allocator_global_heap/CMakeLists.txt"
   "X:/Coding/CPP/mp_os/allocator/allocator_global_heap/tests/CMakeLists.txt"
+  "X:/Coding/CPP/mp_os/associative_container/CMakeLists.txt"
+  "X:/Coding/CPP/mp_os/associative_container/hash_table/CMakeLists.txt"
+  "X:/Coding/CPP/mp_os/associative_container/hash_table/tests/CMakeLists.txt"
+  "X:/Coding/CPP/mp_os/associative_container/search_tree/CMakeLists.txt"
+  "X:/Coding/CPP/mp_os/associative_container/search_tree/binary_search_tree/CMakeLists.txt"
+  "X:/Coding/CPP/mp_os/associative_container/search_tree/binary_search_tree/tests/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeRCCompiler.cmake"
@@ -108,6 +114,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/googletest-build/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "allocator/allocator_global_heap/CMakeFiles/CMakeDirectoryInformation.cmake"
   "allocator/allocator_global_heap/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "associative_container/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "associative_container/hash_table/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "associative_container/hash_table/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "associative_container/search_tree/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "associative_container/search_tree/binary_search_tree/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "associative_container/search_tree/binary_search_tree/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -125,4 +137,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/DependInfo.cmake"
   "allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/DependInfo.cmake"
+  "associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/DependInfo.cmake"
+  "associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/DependInfo.cmake"
+  "associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/DependInfo.cmake"
+  "associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/DependInfo.cmake"
+  "associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/DependInfo.cmake"
+  "associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/DependInfo.cmake"
   )

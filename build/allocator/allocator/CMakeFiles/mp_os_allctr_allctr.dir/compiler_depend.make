@@ -5,7 +5,14 @@ allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/src/allocator_guardant.cp
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
   C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/c++/12.1.0/bits/move.h \
+  C:/msys64/mingw64/include/c++/12.1.0/bits/stl_pair.h \
+  C:/msys64/mingw64/include/c++/12.1.0/bits/stl_relops.h \
+  C:/msys64/mingw64/include/c++/12.1.0/bits/utility.h \
   C:/msys64/mingw64/include/c++/12.1.0/cstddef \
+  C:/msys64/mingw64/include/c++/12.1.0/initializer_list \
+  C:/msys64/mingw64/include/c++/12.1.0/type_traits \
+  C:/msys64/mingw64/include/c++/12.1.0/utility \
   C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++config.h \
   C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/os_defines.h \
@@ -81,21 +88,45 @@ X:/Coding/CPP/mp_os/allocator/allocator/src/allocator_guardant.cpp:
 
 C:/msys64/mingw64/include/_mingw_secapi.h:
 
+C:/msys64/mingw64/include/c++/12.1.0/utility:
+
 C:/msys64/mingw64/include/_mingw.h:
+
+C:/msys64/mingw64/include/c++/12.1.0/bits/stl_relops.h:
 
 C:/msys64/mingw64/include/_mingw_mac.h:
 
+C:/msys64/mingw64/include/c++/12.1.0/bits/predefined_ops.h:
+
+C:/msys64/mingw64/include/c++/12.1.0/bits/move.h:
+
+C:/msys64/mingw64/include/c++/12.1.0/bits/stl_pair.h:
+
+C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/msys64/mingw64/include/c++/12.1.0/bits/stl_iterator_base_funcs.h:
+
+C:/msys64/mingw64/include/c++/12.1.0/bits/stl_iterator.h:
+
+C:/msys64/mingw64/include/c++/12.1.0/bits/utility.h:
+
 C:/msys64/mingw64/include/c++/12.1.0/cstddef:
+
+C:/msys64/mingw64/include/c++/12.1.0/bits/range_access.h:
+
+C:/msys64/mingw64/include/c++/12.1.0/initializer_list:
+
+C:/msys64/mingw64/include/c++/12.1.0/type_traits:
 
 C:/msys64/mingw64/include/crtdefs.h:
 
 C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++config.h:
 
+C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+
 C:/msys64/mingw64/include/c++/12.1.0/bits/vector.tcc:
 
 C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/os_defines.h:
-
-C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 
 C:/msys64/mingw64/include/corecrt.h:
 
@@ -155,27 +186,9 @@ C:/msys64/mingw64/include/c++/12.1.0/bits/invoke.h:
 
 C:/msys64/mingw64/include/c++/12.1.0/bits/memoryfwd.h:
 
-C:/msys64/mingw64/include/c++/12.1.0/bits/predefined_ops.h:
-
-C:/msys64/mingw64/include/c++/12.1.0/bits/move.h:
-
-C:/msys64/mingw64/include/c++/12.1.0/initializer_list:
-
-C:/msys64/mingw64/include/c++/12.1.0/bits/range_access.h:
-
 C:/msys64/mingw64/include/c++/12.1.0/bits/stl_bvector.h:
 
-C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++allocator.h:
-
-C:/msys64/mingw64/include/c++/12.1.0/bits/utility.h:
-
-C:/msys64/mingw64/include/c++/12.1.0/bits/stl_iterator_base_funcs.h:
-
-C:/msys64/mingw64/include/c++/12.1.0/bits/stl_iterator.h:
-
 C:/msys64/mingw64/include/c++/12.1.0/bits/stl_iterator_base_types.h:
-
-C:/msys64/mingw64/include/c++/12.1.0/bits/stl_pair.h:
 
 C:/msys64/mingw64/include/c++/12.1.0/bits/stl_uninitialized.h:
 
@@ -184,8 +197,6 @@ C:/msys64/mingw64/include/c++/12.1.0/debug/debug.h:
 C:/msys64/mingw64/include/c++/12.1.0/ext/numeric_traits.h:
 
 C:/msys64/mingw64/include/c++/12.1.0/new:
-
-C:/msys64/mingw64/include/c++/12.1.0/type_traits:
 
 C:/msys64/mingw64/include/c++/12.1.0/vector:
 

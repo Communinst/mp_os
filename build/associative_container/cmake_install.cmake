@@ -39,6 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("X:/Coding/CPP/mp_os/build/associative_container/hash_table/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("X:/Coding/CPP/mp_os/build/associative_container/search_tree/cmake_install.cmake")
 endif()
 

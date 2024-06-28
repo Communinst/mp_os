@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.21)
 project(mp_os_assctv_cntnr_srch_tr_bnr_srch_tr)
 
-add_subdirectory(AVL_tree)
-add_subdirectory(red_black_tree)
-add_subdirectory(scapegoat_tree)
-add_subdirectory(splay_tree)
+#add_subdirectory(AVL_tree)
+#add_subdirectory(red_black_tree)
+#add_subdirectory(scapegoat_tree)
+#add_subdirectory(splay_tree)
 add_subdirectory(tests)
 add_library(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr

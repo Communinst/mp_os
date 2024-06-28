@@ -344,6 +344,44 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"path" : "associative_container/CMakeLists.txt"
+		},
+		{
+			"path" : "associative_container/hash_table/CMakeLists.txt"
+		},
+		{
+			"path" : "associative_container/hash_table/tests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/FetchContent.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"path" : "associative_container/search_tree/CMakeLists.txt"
+		},
+		{
+			"path" : "associative_container/search_tree/binary_search_tree/CMakeLists.txt"
+		},
+		{
+			"path" : "associative_container/search_tree/binary_search_tree/tests/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/FetchContent.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

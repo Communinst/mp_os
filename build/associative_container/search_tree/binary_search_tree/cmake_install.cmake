@@ -39,26 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/associative_container/search_tree/binary_search_tree/AVL_tree/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/associative_container/search_tree/binary_search_tree/red_black_tree/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/associative_container/search_tree/binary_search_tree/scapegoat_tree/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/associative_container/search_tree/binary_search_tree/splay_tree/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("X:/Coding/CPP/mp_os/build/associative_container/search_tree/binary_search_tree/tests/cmake_install.cmake")
 endif()
 
