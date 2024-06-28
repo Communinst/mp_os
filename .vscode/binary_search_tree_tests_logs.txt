@@ -1,1 +1,1 @@
-[17:41:58][28.06.2024][TRACE]	Message: binarySearchTreePositiveTests.test13 started[17:41:58][28.06.2024][TRACE]	Message: binarySearchTreePositiveTests.test13 finished
+[17:57:12][28.06.2024][TRACE]	Message: binarySearchTreePositiveTests.test13 started[17:57:12][28.06.2024][TRACE]	Message: binarySearchTreePositiveTests.test13 finished

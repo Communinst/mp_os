@@ -543,6 +543,114 @@ mp_os_allctr_allctr_srtd_lst_tests_IS_TOP_LEVEL:STATIC=OFF
 mp_os_allctr_allctr_srtd_lst_tests_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/allocator/allocator_sorted_list/tests
 
 //Value Computed by CMake
+mp_os_arthmtc_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic
+
+//Value Computed by CMake
+mp_os_arthmtc_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Burnikel_Ziegler_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/Burnikel_Ziegler_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Karatsuba_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/Karatsuba_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Newton_dvsn_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Newton_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Newton_dvsn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Newton_dvsn_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/Newton_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/big_integer/tests
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Schonhage_Strassen_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/Schonhage_Strassen_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_bgnt_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_bgnt_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_bgnt_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_dvsn_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/trivial_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_dvsn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_dvsn_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/trivial_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/trivial_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/trivial_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_cntnd_frctn_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/continued_fraction
+
+//Value Computed by CMake
+mp_os_arthmtc_cntnd_frctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_cntnd_frctn_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/continued_fraction
+
+//Value Computed by CMake
+mp_os_arthmtc_frctn_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/arithmetic/fraction
+
+//Value Computed by CMake
+mp_os_arthmtc_frctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_frctn_SOURCE_DIR:STATIC=X:/Coding/CPP/mp_os/arithmetic/fraction
+
+//Value Computed by CMake
 mp_os_assctv_cntnr_BINARY_DIR:STATIC=X:/Coding/CPP/mp_os/build/associative_container
 
 //Value Computed by CMake
@@ -879,7 +987,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=36
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

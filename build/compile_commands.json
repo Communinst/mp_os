@@ -1,53 +1,5 @@
 [
 {
-  "directory": "X:/Coding/CPP/mp_os/build/common",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_cmmn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_cmmn.dir\\src\\not_implemented.cpp.obj -c X:\\Coding\\CPP\\mp_os\\common\\src\\not_implemented.cpp",
-  "file": "X:/Coding/CPP/mp_os/common/src/not_implemented.cpp",
-  "output": "common/CMakeFiles/mp_os_cmmn.dir/src/not_implemented.cpp.obj"
-},
-{
-  "directory": "X:/Coding/CPP/mp_os/build/common",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_cmmn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_cmmn.dir\\src\\operation_not_supported.cpp.obj -c X:\\Coding\\CPP\\mp_os\\common\\src\\operation_not_supported.cpp",
-  "file": "X:/Coding/CPP/mp_os/common/src/operation_not_supported.cpp",
-  "output": "common/CMakeFiles/mp_os_cmmn.dir/src/operation_not_supported.cpp.obj"
-},
-{
-  "directory": "X:/Coding/CPP/mp_os/build/logger/client_logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_clnt_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_clnt_lggr.dir\\src\\client_logger.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\src\\client_logger.cpp",
-  "file": "X:/Coding/CPP/mp_os/logger/client_logger/src/client_logger.cpp",
-  "output": "logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger.cpp.obj"
-},
-{
-  "directory": "X:/Coding/CPP/mp_os/build/logger/client_logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_clnt_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_clnt_lggr.dir\\src\\client_logger_builder.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\src\\client_logger_builder.cpp",
-  "file": "X:/Coding/CPP/mp_os/logger/client_logger/src/client_logger_builder.cpp",
-  "output": "logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj"
-},
-{
-  "directory": "X:/Coding/CPP/mp_os/build/logger/client_logger/tests",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_clnt_lggr_tests.dir\\client_logger_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\tests\\client_logger_tests.cpp",
-  "file": "X:/Coding/CPP/mp_os/logger/client_logger/tests/client_logger_tests.cpp",
-  "output": "logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/client_logger_tests.cpp.obj"
-},
-{
-  "directory": "X:/Coding/CPP/mp_os/build/logger/logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_lggr.dir\\src\\logger.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\logger\\src\\logger.cpp",
-  "file": "X:/Coding/CPP/mp_os/logger/logger/src/logger.cpp",
-  "output": "logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/src/logger.cpp.obj"
-},
-{
-  "directory": "X:/Coding/CPP/mp_os/build/logger/logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_lggr.dir\\src\\logger_builder.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\logger\\src\\logger_builder.cpp",
-  "file": "X:/Coding/CPP/mp_os/logger/logger/src/logger_builder.cpp",
-  "output": "logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/src/logger_builder.cpp.obj"
-},
-{
-  "directory": "X:/Coding/CPP/mp_os/build/logger/logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_lggr.dir\\src\\logger_guardant.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\logger\\src\\logger_guardant.cpp",
-  "file": "X:/Coding/CPP/mp_os/logger/logger/src/logger_guardant.cpp",
-  "output": "logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/src/logger_guardant.cpp.obj"
-},
-{
   "directory": "X:/Coding/CPP/mp_os/build/allocator/allocator",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_allctr_allctr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_allctr_allctr.dir\\src\\allocator_guardant.cpp.obj -c X:\\Coding\\CPP\\mp_os\\allocator\\allocator\\src\\allocator_guardant.cpp",
   "file": "X:/Coding/CPP/mp_os/allocator/allocator/src/allocator_guardant.cpp",
@@ -108,6 +60,66 @@
   "output": "allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/allocator_global_heap_tests.cpp.obj"
 },
 {
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/big_integer",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_bg_intgr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_bg_intgr.dir\\src\\big_integer.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\big_integer\\src\\big_integer.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/big_integer/src/big_integer.cpp",
+  "output": "arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/src/big_integer.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/big_integer",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_bg_intgr_tests_bgnt.dir\\big_integer_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\big_integer\\tests\\big_integer\\big_integer_tests.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/big_integer/big_integer_tests.cpp",
+  "output": "arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/big_integer_tests.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Burnikel_Ziegler_division",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir\\Burnikel_Ziegler_division_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\big_integer\\tests\\Burnikel_Ziegler_division\\Burnikel_Ziegler_division_tests.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/Burnikel_Ziegler_division/Burnikel_Ziegler_division_tests.cpp",
+  "output": "arithmetic/big_integer/tests/Burnikel_Ziegler_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn.dir/Burnikel_Ziegler_division_tests.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Karatsuba_multiplication",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir\\Karatsuba_multiplication_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\big_integer\\tests\\Karatsuba_multiplication\\Karatsuba_multiplication_tests.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/Karatsuba_multiplication/Karatsuba_multiplication_tests.cpp",
+  "output": "arithmetic/big_integer/tests/Karatsuba_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn.dir/Karatsuba_multiplication_tests.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Newton_division",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir\\Newton_division_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\big_integer\\tests\\Newton_division\\Newton_division_tests.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/Newton_division/Newton_division_tests.cpp",
+  "output": "arithmetic/big_integer/tests/Newton_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Newton_dvsn.dir/Newton_division_tests.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Schonhage_Strassen_multiplication",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn.dir\\Schonhage_Strassen_multiplication_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\big_integer\\tests\\Schonhage_Strassen_multiplication\\Schonhage_Strassen_multiplication_tests.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/Schonhage_Strassen_multiplication_tests.cpp",
+  "output": "arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn.dir/Schonhage_Strassen_multiplication_tests.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/trivial_division",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir\\trivial_division_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\big_integer\\tests\\trivial_division\\trivial_division_tests.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/trivial_division/trivial_division_tests.cpp",
+  "output": "arithmetic/big_integer/tests/trivial_division/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_dvsn.dir/trivial_division_tests.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/trivial_multiplication",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir\\trivial_multiplication_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\big_integer\\tests\\trivial_multiplication\\trivial_multiplication_tests.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/big_integer/tests/trivial_multiplication/trivial_multiplication_tests.cpp",
+  "output": "arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/trivial_multiplication_tests.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/continued_fraction",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_cntnd_frctn.dir\\src\\continued_fraction.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\continued_fraction\\src\\continued_fraction.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/continued_fraction/src/continued_fraction.cpp",
+  "output": "arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/src/continued_fraction.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/fraction",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_frctn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_frctn.dir\\src\\fraction.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\fraction\\src\\fraction.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/fraction/src/fraction.cpp",
+  "output": "arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/src/fraction.cpp.obj"
+},
+{
   "directory": "X:/Coding/CPP/mp_os/build/associative_container/hash_table/tests",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_assctv_cntnr_hsh_tbl_tests.dir\\hash_table_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\associative_container\\hash_table\\tests\\hash_table_tests.cpp",
   "file": "X:/Coding/CPP/mp_os/associative_container/hash_table/tests/hash_table_tests.cpp",
@@ -118,5 +130,53 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir\\binary_search_tree_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\associative_container\\search_tree\\binary_search_tree\\tests\\binary_search_tree_tests.cpp",
   "file": "X:/Coding/CPP/mp_os/associative_container/search_tree/binary_search_tree/tests/binary_search_tree_tests.cpp",
   "output": "associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/binary_search_tree_tests.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/common",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_cmmn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_cmmn.dir\\src\\not_implemented.cpp.obj -c X:\\Coding\\CPP\\mp_os\\common\\src\\not_implemented.cpp",
+  "file": "X:/Coding/CPP/mp_os/common/src/not_implemented.cpp",
+  "output": "common/CMakeFiles/mp_os_cmmn.dir/src/not_implemented.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/common",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_cmmn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_cmmn.dir\\src\\operation_not_supported.cpp.obj -c X:\\Coding\\CPP\\mp_os\\common\\src\\operation_not_supported.cpp",
+  "file": "X:/Coding/CPP/mp_os/common/src/operation_not_supported.cpp",
+  "output": "common/CMakeFiles/mp_os_cmmn.dir/src/operation_not_supported.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/logger/client_logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_clnt_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_clnt_lggr.dir\\src\\client_logger.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\src\\client_logger.cpp",
+  "file": "X:/Coding/CPP/mp_os/logger/client_logger/src/client_logger.cpp",
+  "output": "logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/logger/client_logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_clnt_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_clnt_lggr.dir\\src\\client_logger_builder.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\src\\client_logger_builder.cpp",
+  "file": "X:/Coding/CPP/mp_os/logger/client_logger/src/client_logger_builder.cpp",
+  "output": "logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/logger/client_logger/tests",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_clnt_lggr_tests.dir\\client_logger_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\client_logger\\tests\\client_logger_tests.cpp",
+  "file": "X:/Coding/CPP/mp_os/logger/client_logger/tests/client_logger_tests.cpp",
+  "output": "logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/client_logger_tests.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/logger/logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_lggr.dir\\src\\logger.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\logger\\src\\logger.cpp",
+  "file": "X:/Coding/CPP/mp_os/logger/logger/src/logger.cpp",
+  "output": "logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/src/logger.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/logger/logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_lggr.dir\\src\\logger_builder.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\logger\\src\\logger_builder.cpp",
+  "file": "X:/Coding/CPP/mp_os/logger/logger/src/logger_builder.cpp",
+  "output": "logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/src/logger_builder.cpp.obj"
+},
+{
+  "directory": "X:/Coding/CPP/mp_os/build/logger/logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_lggr_lggr.dir\\src\\logger_guardant.cpp.obj -c X:\\Coding\\CPP\\mp_os\\logger\\logger\\src\\logger_guardant.cpp",
+  "file": "X:/Coding/CPP/mp_os/logger/logger/src/logger_guardant.cpp",
+  "output": "logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/src/logger_guardant.cpp.obj"
 }
 ]
