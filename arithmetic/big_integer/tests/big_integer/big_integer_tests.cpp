@@ -4,6 +4,8 @@
 #include <client_logger.h>
 #include <operation_not_supported.h>
 
+std::unordered_map<std::string, std::pair<std::ostream*, size_t>> client_logger::_loggers_count;
+
 logger *create_logger(
     std::vector<std::pair<std::string, logger::severity>> const &output_file_streams_setup,
     bool use_console_stream = true,

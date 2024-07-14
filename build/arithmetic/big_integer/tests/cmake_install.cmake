@@ -42,33 +42,3 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/big_integer/cmake_install.cmake")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Burnikel_Ziegler_division/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Karatsuba_multiplication/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Newton_division/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/Schonhage_Strassen_multiplication/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/trivial_division/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/arithmetic/big_integer/tests/trivial_multiplication/cmake_install.cmake")
-endif()
-
