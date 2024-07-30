@@ -72,6 +72,12 @@
   "output": "arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/big_integer_tests.cpp.obj"
 },
 {
+  "directory": "X:/Coding/CPP/mp_os/build/arithmetic/fraction",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_arthmtc_frctn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_arthmtc_frctn.dir\\src\\fraction.cpp.obj -c X:\\Coding\\CPP\\mp_os\\arithmetic\\fraction\\src\\fraction.cpp",
+  "file": "X:/Coding/CPP/mp_os/arithmetic/fraction/src/fraction.cpp",
+  "output": "arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/src/fraction.cpp.obj"
+},
+{
   "directory": "X:/Coding/CPP/mp_os/build/associative_container/hash_table/tests",
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\mp_os_assctv_cntnr_hsh_tbl_tests.dir\\hash_table_tests.cpp.obj -c X:\\Coding\\CPP\\mp_os\\associative_container\\hash_table\\tests\\hash_table_tests.cpp",
   "file": "X:/Coding/CPP/mp_os/associative_container/hash_table/tests/hash_table_tests.cpp",

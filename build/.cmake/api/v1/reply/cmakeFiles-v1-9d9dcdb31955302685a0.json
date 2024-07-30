@@ -297,6 +297,12 @@
 			"path" : "X:/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake"
 		},
 		{
+			"path" : "arithmetic/fraction/CMakeLists.txt"
+		},
+		{
+			"path" : "arithmetic/fraction/tests/CMakeLists.txt"
+		},
+		{
 			"path" : "associative_container/CMakeLists.txt"
 		},
 		{

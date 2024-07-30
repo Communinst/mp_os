@@ -71,6 +71,7 @@ arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/src/fraction.cpp.obj: X:/
   C:/msys64/mingw64/include/c++/12.1.0/cctype \
   C:/msys64/mingw64/include/c++/12.1.0/cerrno \
   C:/msys64/mingw64/include/c++/12.1.0/clocale \
+  C:/msys64/mingw64/include/c++/12.1.0/cmath \
   C:/msys64/mingw64/include/c++/12.1.0/cstddef \
   C:/msys64/mingw64/include/c++/12.1.0/cstdint \
   C:/msys64/mingw64/include/c++/12.1.0/cstdio \
@@ -126,6 +127,7 @@ arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/src/fraction.cpp.obj: X:/
   C:/msys64/mingw64/include/limits.h \
   C:/msys64/mingw64/include/locale.h \
   C:/msys64/mingw64/include/malloc.h \
+  C:/msys64/mingw64/include/math.h \
   C:/msys64/mingw64/include/process.h \
   C:/msys64/mingw64/include/pthread.h \
   C:/msys64/mingw64/include/pthread_compat.h \
@@ -329,6 +331,8 @@ C:/msys64/mingw64/include/c++/12.1.0/cerrno:
 
 C:/msys64/mingw64/include/c++/12.1.0/clocale:
 
+C:/msys64/mingw64/include/c++/12.1.0/cmath:
+
 C:/msys64/mingw64/include/corecrt_startup.h:
 
 C:/msys64/mingw64/include/c++/12.1.0/cstddef:
@@ -364,6 +368,8 @@ C:/msys64/mingw64/include/c++/12.1.0/iosfwd:
 C:/msys64/mingw64/include/sys/timeb.h:
 
 C:/msys64/mingw64/include/c++/12.1.0/iostream:
+
+C:/msys64/mingw64/include/math.h:
 
 C:/msys64/mingw64/include/c++/12.1.0/istream:
 

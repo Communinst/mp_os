@@ -304,6 +304,19 @@ mp_os_arthmtc_bg_intgr_tests_bgnt/fast:
 .PHONY : mp_os_arthmtc_bg_intgr_tests_bgnt/fast
 
 #=============================================================================
+# Target rules for targets named mp_os_arthmtc_frctn
+
+# Build rule for target.
+mp_os_arthmtc_frctn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_arthmtc_frctn
+.PHONY : mp_os_arthmtc_frctn
+
+# fast build rule for target.
+mp_os_arthmtc_frctn/fast:
+	$(MAKE) $(MAKESILENT) -f arithmetic\fraction\CMakeFiles\mp_os_arthmtc_frctn.dir\build.make arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/build
+.PHONY : mp_os_arthmtc_frctn/fast
+
+#=============================================================================
 # Target rules for targets named mp_os_assctv_cntnr
 
 # Build rule for target.
@@ -456,6 +469,7 @@ help:
 	@echo ... mp_os_allctr_allctr_glbl_hp_tests
 	@echo ... mp_os_arthmtc_bg_intgr
 	@echo ... mp_os_arthmtc_bg_intgr_tests_bgnt
+	@echo ... mp_os_arthmtc_frctn
 	@echo ... mp_os_assctv_cntnr
 	@echo ... mp_os_assctv_cntnr_hsh_tbl
 	@echo ... mp_os_assctv_cntnr_hsh_tbl_tests

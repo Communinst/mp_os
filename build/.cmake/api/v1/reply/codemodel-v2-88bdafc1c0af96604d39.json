@@ -10,9 +10,9 @@
 					[
 						1,
 						10,
-						14,
-						20,
-						21
+						16,
+						22,
+						23
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
@@ -188,7 +188,8 @@
 					"build" : "arithmetic",
 					"childIndexes" : 
 					[
-						11
+						11,
+						14
 					],
 					"jsonFile" : "directory-arithmetic-Debug-c803474957da449c6265.json",
 					"minimumCMakeVersion" : 
@@ -249,11 +250,41 @@
 					]
 				},
 				{
+					"build" : "arithmetic/fraction",
+					"childIndexes" : 
+					[
+						15
+					],
+					"jsonFile" : "directory-arithmetic.fraction-Debug-3f5bf34d5ddcfb157184.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 14,
+					"source" : "arithmetic/fraction",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "arithmetic/fraction/tests",
+					"jsonFile" : "directory-arithmetic.fraction.tests-Debug-5f4c066d0d89e43b07ad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 14,
+					"source" : "arithmetic/fraction/tests"
+				},
+				{
 					"build" : "associative_container",
 					"childIndexes" : 
 					[
-						15,
-						17
+						17,
+						19
 					],
 					"jsonFile" : "directory-associative_container-Debug-53640f63f242822df054.json",
 					"minimumCMakeVersion" : 
@@ -261,30 +292,30 @@
 						"string" : "3.21"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 14,
+					"projectIndex" : 15,
 					"source" : "associative_container",
 					"targetIndexes" : 
 					[
-						11
+						12
 					]
 				},
 				{
 					"build" : "associative_container/hash_table",
 					"childIndexes" : 
 					[
-						16
+						18
 					],
 					"jsonFile" : "directory-associative_container.hash_table-Debug-987b7321b199bf6f1210.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
 					},
-					"parentIndex" : 14,
-					"projectIndex" : 15,
+					"parentIndex" : 16,
+					"projectIndex" : 16,
 					"source" : "associative_container/hash_table",
 					"targetIndexes" : 
 					[
-						12
+						13
 					]
 				},
 				{
@@ -294,50 +325,50 @@
 					{
 						"string" : "3.21"
 					},
-					"parentIndex" : 15,
-					"projectIndex" : 16,
-					"source" : "associative_container/hash_table/tests",
-					"targetIndexes" : 
-					[
-						13
-					]
-				},
-				{
-					"build" : "associative_container/search_tree",
-					"childIndexes" : 
-					[
-						18
-					],
-					"jsonFile" : "directory-associative_container.search_tree-Debug-dff97d33748f48da6321.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.21"
-					},
-					"parentIndex" : 14,
+					"parentIndex" : 17,
 					"projectIndex" : 17,
-					"source" : "associative_container/search_tree",
+					"source" : "associative_container/hash_table/tests",
 					"targetIndexes" : 
 					[
 						14
 					]
 				},
 				{
+					"build" : "associative_container/search_tree",
+					"childIndexes" : 
+					[
+						20
+					],
+					"jsonFile" : "directory-associative_container.search_tree-Debug-dff97d33748f48da6321.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 18,
+					"source" : "associative_container/search_tree",
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
 					"build" : "associative_container/search_tree/binary_search_tree",
 					"childIndexes" : 
 					[
-						19
+						21
 					],
 					"jsonFile" : "directory-associative_container.search_tree.binary_search_tree-Debug-67b4582040269ae23c22.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
 					},
-					"parentIndex" : 17,
-					"projectIndex" : 18,
+					"parentIndex" : 19,
+					"projectIndex" : 19,
 					"source" : "associative_container/search_tree/binary_search_tree",
 					"targetIndexes" : 
 					[
-						15
+						16
 					]
 				},
 				{
@@ -347,12 +378,12 @@
 					{
 						"string" : "3.21"
 					},
-					"parentIndex" : 18,
-					"projectIndex" : 19,
+					"parentIndex" : 20,
+					"projectIndex" : 20,
 					"source" : "associative_container/search_tree/binary_search_tree/tests",
 					"targetIndexes" : 
 					[
-						16
+						17
 					]
 				},
 				{
@@ -363,19 +394,19 @@
 						"string" : "3.21"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 20,
+					"projectIndex" : 21,
 					"source" : "common",
 					"targetIndexes" : 
 					[
-						17
+						18
 					]
 				},
 				{
 					"build" : "logger",
 					"childIndexes" : 
 					[
-						22,
-						25
+						24,
+						27
 					],
 					"jsonFile" : "directory-logger-Debug-540440305f9964810dc4.json",
 					"minimumCMakeVersion" : 
@@ -383,27 +414,27 @@
 						"string" : "3.21"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 21,
+					"projectIndex" : 22,
 					"source" : "logger"
 				},
 				{
 					"build" : "logger/client_logger",
 					"childIndexes" : 
 					[
-						23,
-						24
+						25,
+						26
 					],
 					"jsonFile" : "directory-logger.client_logger-Debug-83f108e66444f1dacaad.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
 					},
-					"parentIndex" : 21,
-					"projectIndex" : 22,
+					"parentIndex" : 23,
+					"projectIndex" : 23,
 					"source" : "logger/client_logger",
 					"targetIndexes" : 
 					[
-						18
+						19
 					]
 				},
 				{
@@ -413,12 +444,12 @@
 					{
 						"string" : "3.21"
 					},
-					"parentIndex" : 22,
-					"projectIndex" : 23,
+					"parentIndex" : 24,
+					"projectIndex" : 24,
 					"source" : "logger/client_logger/tests",
 					"targetIndexes" : 
 					[
-						19
+						20
 					]
 				},
 				{
@@ -428,8 +459,8 @@
 					{
 						"string" : "3.1"
 					},
-					"parentIndex" : 22,
-					"projectIndex" : 24,
+					"parentIndex" : 24,
+					"projectIndex" : 25,
 					"source" : "build/_deps/json-src"
 				},
 				{
@@ -439,12 +470,12 @@
 					{
 						"string" : "3.21"
 					},
-					"parentIndex" : 21,
-					"projectIndex" : 25,
+					"parentIndex" : 23,
+					"projectIndex" : 26,
 					"source" : "logger/logger",
 					"targetIndexes" : 
 					[
-						20
+						21
 					]
 				}
 			],
@@ -456,9 +487,9 @@
 					[
 						1,
 						10,
-						14,
-						20,
-						21
+						15,
+						21,
+						22
 					],
 					"directoryIndexes" : 
 					[
@@ -597,7 +628,8 @@
 				{
 					"childIndexes" : 
 					[
-						11
+						11,
+						14
 					],
 					"directoryIndexes" : 
 					[
@@ -647,17 +679,13 @@
 					]
 				},
 				{
-					"childIndexes" : 
-					[
-						15,
-						17
-					],
 					"directoryIndexes" : 
 					[
-						14
+						14,
+						15
 					],
-					"name" : "mp_os_assctv_cntnr",
-					"parentIndex" : 0,
+					"name" : "mp_os_arthmtc_frctn",
+					"parentIndex" : 10,
 					"targetIndexes" : 
 					[
 						11
@@ -666,25 +694,30 @@
 				{
 					"childIndexes" : 
 					[
-						16
+						16,
+						18
 					],
 					"directoryIndexes" : 
 					[
-						15
+						16
 					],
-					"name" : "mp_os_assctv_cntnr_hsh_tbl",
-					"parentIndex" : 14,
+					"name" : "mp_os_assctv_cntnr",
+					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						12
 					]
 				},
 				{
+					"childIndexes" : 
+					[
+						17
+					],
 					"directoryIndexes" : 
 					[
-						16
+						17
 					],
-					"name" : "mp_os_assctv_cntnr_hsh_tbl_tests",
+					"name" : "mp_os_assctv_cntnr_hsh_tbl",
 					"parentIndex" : 15,
 					"targetIndexes" : 
 					[
@@ -692,16 +725,12 @@
 					]
 				},
 				{
-					"childIndexes" : 
+					"directoryIndexes" : 
 					[
 						18
 					],
-					"directoryIndexes" : 
-					[
-						17
-					],
-					"name" : "mp_os_assctv_cntnr_srch_tr",
-					"parentIndex" : 14,
+					"name" : "mp_os_assctv_cntnr_hsh_tbl_tests",
+					"parentIndex" : 16,
 					"targetIndexes" : 
 					[
 						14
@@ -714,21 +743,25 @@
 					],
 					"directoryIndexes" : 
 					[
-						18
+						19
 					],
-					"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr",
-					"parentIndex" : 17,
+					"name" : "mp_os_assctv_cntnr_srch_tr",
+					"parentIndex" : 15,
 					"targetIndexes" : 
 					[
 						15
 					]
 				},
 				{
+					"childIndexes" : 
+					[
+						20
+					],
 					"directoryIndexes" : 
 					[
-						19
+						20
 					],
-					"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests",
+					"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr",
 					"parentIndex" : 18,
 					"targetIndexes" : 
 					[
@@ -738,24 +771,36 @@
 				{
 					"directoryIndexes" : 
 					[
-						20
+						21
 					],
-					"name" : "mp_os_cmmn",
-					"parentIndex" : 0,
+					"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests",
+					"parentIndex" : 19,
 					"targetIndexes" : 
 					[
 						17
 					]
 				},
 				{
+					"directoryIndexes" : 
+					[
+						22
+					],
+					"name" : "mp_os_cmmn",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
 					"childIndexes" : 
 					[
-						22,
-						25
+						23,
+						26
 					],
 					"directoryIndexes" : 
 					[
-						21
+						23
 					],
 					"name" : "mp_os_lggr",
 					"parentIndex" : 0
@@ -763,26 +808,14 @@
 				{
 					"childIndexes" : 
 					[
-						23,
+						24,
+						25
+					],
+					"directoryIndexes" : 
+					[
 						24
 					],
-					"directoryIndexes" : 
-					[
-						22
-					],
 					"name" : "mp_os_lggr_clnt_lggr",
-					"parentIndex" : 21,
-					"targetIndexes" : 
-					[
-						18
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						23
-					],
-					"name" : "mp_os_lggr_clnt_lggr_tests",
 					"parentIndex" : 22,
 					"targetIndexes" : 
 					[
@@ -792,21 +825,33 @@
 				{
 					"directoryIndexes" : 
 					[
-						24
+						25
 					],
-					"name" : "nlohmann_json",
-					"parentIndex" : 22
+					"name" : "mp_os_lggr_clnt_lggr_tests",
+					"parentIndex" : 23,
+					"targetIndexes" : 
+					[
+						20
+					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						25
+						26
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 23
+				},
+				{
+					"directoryIndexes" : 
+					[
+						27
 					],
 					"name" : "mp_os_lggr_lggr",
-					"parentIndex" : 21,
+					"parentIndex" : 22,
 					"targetIndexes" : 
 					[
-						20
+						21
 					]
 				}
 			],
@@ -822,7 +867,7 @@
 				{
 					"directoryIndex" : 6,
 					"id" : "gmock_main::@0f7bb11d64f3678238c7",
-					"jsonFile" : "target-gmock_main-Debug-2f9c4070e5b7942bdf8f.json",
+					"jsonFile" : "target-gmock_main-Debug-5f65d97be2819bda759b.json",
 					"name" : "gmock_main",
 					"projectIndex" : 6
 				},
@@ -857,7 +902,7 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "mp_os_allctr_allctr_bndr_tgs_tests::@3b7b04324609e765ae99",
-					"jsonFile" : "target-mp_os_allctr_allctr_bndr_tgs_tests-Debug-11e5995f78a4e370a01c.json",
+					"jsonFile" : "target-mp_os_allctr_allctr_bndr_tgs_tests-Debug-0ff405d2b6780e725117.json",
 					"name" : "mp_os_allctr_allctr_bndr_tgs_tests",
 					"projectIndex" : 4
 				},
@@ -871,7 +916,7 @@
 				{
 					"directoryIndex" : 9,
 					"id" : "mp_os_allctr_allctr_glbl_hp_tests::@16f117c78007c3aaefb3",
-					"jsonFile" : "target-mp_os_allctr_allctr_glbl_hp_tests-Debug-bf96404c9f33819a7dd3.json",
+					"jsonFile" : "target-mp_os_allctr_allctr_glbl_hp_tests-Debug-2263986e3eb0c9a0b936.json",
 					"name" : "mp_os_allctr_allctr_glbl_hp_tests",
 					"projectIndex" : 9
 				},
@@ -885,79 +930,86 @@
 				{
 					"directoryIndex" : 13,
 					"id" : "mp_os_arthmtc_bg_intgr_tests_bgnt::@2949616bd59f656eaeb0",
-					"jsonFile" : "target-mp_os_arthmtc_bg_intgr_tests_bgnt-Debug-d4239a9ed58a4d031417.json",
+					"jsonFile" : "target-mp_os_arthmtc_bg_intgr_tests_bgnt-Debug-db54e764c0c65e7ac8f2.json",
 					"name" : "mp_os_arthmtc_bg_intgr_tests_bgnt",
 					"projectIndex" : 13
 				},
 				{
 					"directoryIndex" : 14,
-					"id" : "mp_os_assctv_cntnr::@eceec357cdd12af20473",
-					"jsonFile" : "target-mp_os_assctv_cntnr-Debug-46600d12b15e64875f87.json",
-					"name" : "mp_os_assctv_cntnr",
+					"id" : "mp_os_arthmtc_frctn::@07c0fe30a8e534897c4b",
+					"jsonFile" : "target-mp_os_arthmtc_frctn-Debug-cb9a3341636402f36654.json",
+					"name" : "mp_os_arthmtc_frctn",
 					"projectIndex" : 14
 				},
 				{
-					"directoryIndex" : 15,
-					"id" : "mp_os_assctv_cntnr_hsh_tbl::@7eca8430e2b069497066",
-					"jsonFile" : "target-mp_os_assctv_cntnr_hsh_tbl-Debug-6e21129ea7581fa1b0f9.json",
-					"name" : "mp_os_assctv_cntnr_hsh_tbl",
+					"directoryIndex" : 16,
+					"id" : "mp_os_assctv_cntnr::@eceec357cdd12af20473",
+					"jsonFile" : "target-mp_os_assctv_cntnr-Debug-46600d12b15e64875f87.json",
+					"name" : "mp_os_assctv_cntnr",
 					"projectIndex" : 15
 				},
 				{
-					"directoryIndex" : 16,
-					"id" : "mp_os_assctv_cntnr_hsh_tbl_tests::@bd15d6a650003360361d",
-					"jsonFile" : "target-mp_os_assctv_cntnr_hsh_tbl_tests-Debug-1510137a8beb663a23ad.json",
-					"name" : "mp_os_assctv_cntnr_hsh_tbl_tests",
+					"directoryIndex" : 17,
+					"id" : "mp_os_assctv_cntnr_hsh_tbl::@7eca8430e2b069497066",
+					"jsonFile" : "target-mp_os_assctv_cntnr_hsh_tbl-Debug-6e21129ea7581fa1b0f9.json",
+					"name" : "mp_os_assctv_cntnr_hsh_tbl",
 					"projectIndex" : 16
 				},
 				{
-					"directoryIndex" : 17,
-					"id" : "mp_os_assctv_cntnr_srch_tr::@32bbdc00ff9a6995c868",
-					"jsonFile" : "target-mp_os_assctv_cntnr_srch_tr-Debug-48fdbe98f18ba3f16eb1.json",
-					"name" : "mp_os_assctv_cntnr_srch_tr",
+					"directoryIndex" : 18,
+					"id" : "mp_os_assctv_cntnr_hsh_tbl_tests::@bd15d6a650003360361d",
+					"jsonFile" : "target-mp_os_assctv_cntnr_hsh_tbl_tests-Debug-0e76d4eac06f79de3b28.json",
+					"name" : "mp_os_assctv_cntnr_hsh_tbl_tests",
 					"projectIndex" : 17
 				},
 				{
-					"directoryIndex" : 18,
-					"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr::@af874379a609ad2410a4",
-					"jsonFile" : "target-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr-Debug-04ee0b96a37522572565.json",
-					"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr",
+					"directoryIndex" : 19,
+					"id" : "mp_os_assctv_cntnr_srch_tr::@32bbdc00ff9a6995c868",
+					"jsonFile" : "target-mp_os_assctv_cntnr_srch_tr-Debug-48fdbe98f18ba3f16eb1.json",
+					"name" : "mp_os_assctv_cntnr_srch_tr",
 					"projectIndex" : 18
 				},
 				{
-					"directoryIndex" : 19,
-					"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests::@7d553e8554ea19fdd2a5",
-					"jsonFile" : "target-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests-Debug-a5aaaee827ea441db27a.json",
-					"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests",
+					"directoryIndex" : 20,
+					"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr::@af874379a609ad2410a4",
+					"jsonFile" : "target-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr-Debug-04ee0b96a37522572565.json",
+					"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr",
 					"projectIndex" : 19
 				},
 				{
-					"directoryIndex" : 20,
-					"id" : "mp_os_cmmn::@bfc844598bd03e848b3c",
-					"jsonFile" : "target-mp_os_cmmn-Debug-d03744caaac68de706bb.json",
-					"name" : "mp_os_cmmn",
+					"directoryIndex" : 21,
+					"id" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests::@7d553e8554ea19fdd2a5",
+					"jsonFile" : "target-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests-Debug-84b355234613c346c7e6.json",
+					"name" : "mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests",
 					"projectIndex" : 20
 				},
 				{
 					"directoryIndex" : 22,
+					"id" : "mp_os_cmmn::@bfc844598bd03e848b3c",
+					"jsonFile" : "target-mp_os_cmmn-Debug-d03744caaac68de706bb.json",
+					"name" : "mp_os_cmmn",
+					"projectIndex" : 21
+				},
+				{
+					"directoryIndex" : 24,
 					"id" : "mp_os_lggr_clnt_lggr::@1192419ba09c9016d213",
 					"jsonFile" : "target-mp_os_lggr_clnt_lggr-Debug-2f073f59fe7016379451.json",
 					"name" : "mp_os_lggr_clnt_lggr",
-					"projectIndex" : 22
-				},
-				{
-					"directoryIndex" : 23,
-					"id" : "mp_os_lggr_clnt_lggr_tests::@6a2e72c4a132e9fdd966",
-					"jsonFile" : "target-mp_os_lggr_clnt_lggr_tests-Debug-2ad6ab2c508c6c2320c5.json",
-					"name" : "mp_os_lggr_clnt_lggr_tests",
 					"projectIndex" : 23
 				},
 				{
 					"directoryIndex" : 25,
+					"id" : "mp_os_lggr_clnt_lggr_tests::@6a2e72c4a132e9fdd966",
+					"jsonFile" : "target-mp_os_lggr_clnt_lggr_tests-Debug-2ad6ab2c508c6c2320c5.json",
+					"name" : "mp_os_lggr_clnt_lggr_tests",
+					"projectIndex" : 24
+				},
+				{
+					"directoryIndex" : 27,
 					"id" : "mp_os_lggr_lggr::@af94273c3084cfb43adb",
 					"jsonFile" : "target-mp_os_lggr_lggr-Debug-b660f49dd0e7305affb4.json",
 					"name" : "mp_os_lggr_lggr",
-					"projectIndex" : 25
+					"projectIndex" : 26
 				}
 			]
 		}
