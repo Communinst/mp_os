@@ -1,0 +1,3 @@
+X:\CMake\bin\cmake.exe -E rm -f CMakeFiles\l49.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\l49.dir/objects.a @CMakeFiles\l49.dir\objects1.rsp
+C:\msys64\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\l49.dir/objects.a -Wl,--no-whole-archive -o l49.exe -Wl,--out-implib,libl49.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\l49.dir\linkLibs.rsp

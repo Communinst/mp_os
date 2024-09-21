@@ -1,0 +1,38 @@
+[
+{
+  "directory": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\l49.dir\\test.c.obj -c X:\\Coding\\Cfiles\\3Sem\\MathPractice\\LAB4\\l49\\test.c",
+  "file": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/test.c",
+  "output": "CMakeFiles/l49.dir/test.c.obj"
+},
+{
+  "directory": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\l49.dir\\MyLib.c.obj -c X:\\Coding\\Cfiles\\3Sem\\MathPractice\\LAB4\\l49\\MyLib.c",
+  "file": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/MyLib.c",
+  "output": "CMakeFiles/l49.dir/MyLib.c.obj"
+},
+{
+  "directory": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\l49.dir\\PriorityQueue.c.obj -c X:\\Coding\\Cfiles\\3Sem\\MathPractice\\LAB4\\l49\\PriorityQueue.c",
+  "file": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/PriorityQueue.c",
+  "output": "CMakeFiles/l49.dir/PriorityQueue.c.obj"
+},
+{
+  "directory": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\l49.dir\\BinaryHeap.c.obj -c X:\\Coding\\Cfiles\\3Sem\\MathPractice\\LAB4\\l49\\BinaryHeap.c",
+  "file": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/BinaryHeap.c",
+  "output": "CMakeFiles/l49.dir/BinaryHeap.c.obj"
+},
+{
+  "directory": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\l49.dir\\BinomialHeap.c.obj -c X:\\Coding\\Cfiles\\3Sem\\MathPractice\\LAB4\\l49\\BinomialHeap.c",
+  "file": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/BinomialHeap.c",
+  "output": "CMakeFiles/l49.dir/BinomialHeap.c.obj"
+},
+{
+  "directory": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -o CMakeFiles\\l49.dir\\BinomialTree.c.obj -c X:\\Coding\\Cfiles\\3Sem\\MathPractice\\LAB4\\l49\\BinomialTree.c",
+  "file": "X:/Coding/Cfiles/3Sem/MathPractice/LAB4/l49/BinomialTree.c",
+  "output": "CMakeFiles/l49.dir/BinomialTree.c.obj"
+}
+]
